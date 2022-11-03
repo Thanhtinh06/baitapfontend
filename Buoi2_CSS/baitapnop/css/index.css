@@ -1,0 +1,46 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: black;
+  background-color: #faf4f2;
+  margin-left: 80px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* End Global */
+
+/* Start header*/
+.header
+/* End header */
+/* Star navigater */
+.navigater
+
+
+/* End Star navigater */
+/* Start carousel */
+.carousel
+/* End carousel */
+/* Start about */
+.about
+/* End about */
+/* Start hightlight */
+.hightlight
+/* End hightlight */
+/* Start services */
+.services
+/* End services */
+/* Start New */
+.news
+/*End news*/
+/* Start footer */
+.footer
+/*End footer*/  
