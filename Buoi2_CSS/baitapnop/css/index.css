@@ -8,39 +8,160 @@
 html,
 body {
   color: black;
-  background-color: #faf4f2;
-  margin-left: 80px;
+  background-color: white;
+  font-family: Arial, Helvetica;
+  margin-left: 100px;
+  
 }
 
 .clear {
   clear: both;
 }
+h1 { 
+  color: #031736;
+  margin-top: 20px;
+}
 
 /* End Global */
 
 /* Start header*/
-.header
+.header i {
+  color: rgb(253, 190, 6);
+}
 /* End header */
 /* Star navigater */
-.navigater
-
+.navigater ul {
+  list-style: none;
+}
+.navigater li {
+  margin-right: 40px;
+  display: inline;
+}
 
 /* End Star navigater */
 /* Start carousel */
-.carousel
+#carousel {
+  background-image: url(../images/2.jpg);
+  background-position: top left;
+  background-size: cover;
+  height: 600px;
+  margin-top: 20px;
+}
 /* End carousel */
 /* Start about */
-.about
+.about {
+  margin-top: 20px;
+}
+div > h1 {
+  margin-bottom: 20px;
+}
+.about .about_content {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+  padding-left: 160px;
+}
+.about button {
+  margin-top: 40px;
+  background-color: rgb(253, 190, 6);
+  color: #031736;
+  padding: 15px 25px;
+  border: #faf4f2;
+  border-radius: 5%;
+  font-size: 14px;
+}
+.about img {
+  padding: 30px 20px;
+  width: 600px;
+
+}
 /* End about */
 /* Start hightlight */
-.hightlight
+.hightlight {
+  background-color: rgb(244, 244, 244);
+  padding: 60px 0px;
+  
+}
+.hightlight_content {
+  float: left;
+  width: 25%;
+}
+.hightlight_number {
+  float: left;
+  width: 50%;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-left: 30px ;
+}
+.hightlight_text {
+  margin-top: 10px;
+
+}
 /* End hightlight */
 /* Start services */
-.services
+.services {
+  margin-top: 20px;
+}
+.services_item i {
+  color: white;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.services_item {
+  background-color: #031736;
+  float: left;
+  width: 20%;
+  color: white;
+  padding: 50px;
+  margin: 10px;
+  box-sizing: border-box;
+  position: center;
+  border-radius: 5px;
+}
 /* End services */
 /* Start New */
-.news
+.news {
+  background-color: rgb(244, 244, 244);
+}
+.news_contents,
+.post_img img,
+.news_titles{
+  float:left;
+  width: 50%;
+}
+.post_details {
+  padding: 60px 80px;
+}
+.post_img img {
+  padding: 30px 40px;
+  border-radius: 15px;
+}
+hr {
+  margin-right: 30px;
+}
+.post_details p {
+  padding-top: 10px;
+}
 /*End news*/
 /* Start footer */
-.footer
+.footer {
+  background-color: #031736;
+  color: white;
+}
+.footer_contact {
+  float: left;
+  width: 33,33%;
+}
+.footer ul {
+  list-style: none;
+}
+
 /*End footer*/  
