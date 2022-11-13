@@ -10,14 +10,14 @@ body {
   color: black;
   background-color: white;
   font-family: Arial, Helvetica;
-  margin-left: 100px;
-  
+
 }
 
 .clear {
   clear: both;
 }
-h1 { 
+
+h1 {
   color: #031736;
   margin-top: 20px;
 }
@@ -25,19 +25,56 @@ h1 {
 /* End Global */
 
 /* Start header*/
+
+.services {
+  margin: auto;
+  width: 80%;
+}
+.header {
+  margin: auto;
+  width: 80%;
+  padding: 15px;
+  padding-right: 15px;
+}
+
 .header i {
   color: rgb(253, 190, 6);
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #031736;
+  cursor: pointer;
+  text-align: center;
+  vertical-align:top;
+
 }
+
+.header h1 {
+  display: inline;
+  margin-left: 5px;
+}
+
 /* End header */
 /* Star navigater */
+
 .navigater ul {
   list-style: none;
+  padding: 20px;
 }
+
 .navigater li {
   margin-right: 40px;
   display: inline;
+  cursor: pointer;
+
 }
 
+.navigater li:hover{
+  color: rgb(253, 190, 6);
+}
 /* End Star navigater */
 /* Start carousel */
 #carousel {
@@ -45,22 +82,33 @@ h1 {
   background-position: top left;
   background-size: cover;
   height: 600px;
-  margin-top: 20px;
 }
+
 /* End carousel */
 /* Start about */
 .about {
-  margin-top: 20px;
+  padding: 40px 20px;
+  margin: auto;
+  width: 80%;
+  font-size: 16px;
 }
-div > h1 {
+
+div>h1 {
   margin-bottom: 20px;
 }
-.about .about_content {
+
+.about_content,
+.about_image {
   float: left;
   width: 50%;
-  font-size: 14px;
   color: rgb(116, 116, 116);
-  padding-left: 160px;
+  padding: 15px;
+}
+
+.about_image img {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 .about button {
   margin-top: 40px;
@@ -69,99 +117,157 @@ div > h1 {
   padding: 15px 25px;
   border: #faf4f2;
   border-radius: 5%;
-  font-size: 14px;
+  font-size: 16px;
 }
-.about img {
-  padding: 30px 20px;
-  width: 600px;
+.about button:hover {
+  background-color: white;
+  border: 2px solid rgb(253, 190, 6);
+  color: rgb(253, 190, 6);
+  font-size: 16px;
+}
 
-}
 /* End about */
 /* Start hightlight */
 .hightlight {
   background-color: rgb(244, 244, 244);
-  padding: 60px 0px;
-  
+  width: 100%;
+  padding: 60px 0;
+  color: rgb(25, 28, 31);
+
+}
+
+.hightlight_detail {
+  width: 80%;
+  margin: auto;
 }
 .hightlight_content {
   float: left;
   width: 25%;
+  padding-right: 40px;
 }
+
 .hightlight_number {
   float: left;
   width: 50%;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bolder;
-  margin-left: 30px ;
+  text-align: right;
+  padding: 0 15px;
+  
 }
+
 .hightlight_text {
+  float: left;
+  width: 50%;
+  font-size: 16px;
   margin-top: 10px;
+  line-height: 25px;
+  text-align: left;
 
 }
+
 /* End hightlight */
 /* Start services */
-.services {
-  margin-top: 20px;
+
+.services_content {
+  text-align: center;
+  padding: 80px 0px;
+  padding-left: 10px;
+  background-color: white;
+
 }
-.services_item i {
-  color: white;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  top: 20px;
-  right: 20px;
-  position: absolute;
-  z-index: 10;
-  cursor: pointer;
-  font-weight: bolder;
-}
+
 .services_item {
-  background-color: #031736;
+  background-color:rgb(2,23,54);
   float: left;
   width: 20%;
   color: white;
-  padding: 50px;
-  margin: 10px;
-  box-sizing: border-box;
-  position: center;
   border-radius: 5px;
+  padding: 40px 70px;
+  padding-left: 60px;
+  margin: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  
 }
+
+
+.services_item i {
+  color: white;
+  width: 62px;
+  height: 62px;
+  line-height: 62px;
+  cursor: pointer;
+  font-weight: bolder;
+  display:contents;
+  font-size: 40px;
+  
+  
+}
+.services_item p {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  
+}
+
+
 /* End services */
 /* Start New */
 .news {
   background-color: rgb(244, 244, 244);
+  padding: 40px 70px;
+
 }
-.news_contents,
-.post_img img,
-.news_titles{
-  float:left;
+.new_detail {
+  width: 80%;
+  margin: auto;
+}
+
+.news_contents {
+  float: left;
   width: 50%;
 }
+.content_events {
+  float: left;
+  width: 50%;
+}
+.post_item {
+  width: 100%;
+  background-color: white;
+}
+
+.post_img,
 .post_details {
-  padding: 60px 80px;
+  float: left;
+  width: 50%;
 }
+
 .post_img img {
-  padding: 30px 40px;
-  border-radius: 15px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
+
 hr {
   margin-right: 30px;
 }
-.post_details p {
-  padding-top: 10px;
-}
+
+
 /*End news*/
 /* Start footer */
 .footer {
   background-color: #031736;
   color: white;
 }
+
 .footer_contact {
   float: left;
-  width: 33,33%;
+  width: 33, 33%;
 }
+
 .footer ul {
   list-style: none;
 }
 
-/*End footer*/  
+/*End footer*/
