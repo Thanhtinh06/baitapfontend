@@ -95,6 +95,8 @@ h1 {
 
 div>h1 {
   margin-bottom: 20px;
+ 
+  ;
 }
 
 .about_content,
@@ -118,12 +120,14 @@ div>h1 {
   border: #faf4f2;
   border-radius: 5%;
   font-size: 16px;
+  cursor: pointer;
 }
 .about button:hover {
   background-color: white;
   border: 2px solid rgb(253, 190, 6);
   color: rgb(253, 190, 6);
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* End about */
@@ -161,7 +165,6 @@ div>h1 {
   width: 50%;
   font-size: 16px;
   margin-top: 10px;
-  line-height: 25px;
   text-align: left;
 
 }
@@ -227,6 +230,9 @@ div>h1 {
 .news_contents {
   float: left;
   width: 50%;
+  background-color: white;
+  padding: 15px 10px;
+  margin-top: 40px;
 }
 .content_events {
   float: left;
@@ -243,17 +249,49 @@ div>h1 {
   width: 50%;
 }
 
+h3,p {
+  margin-top: 5px;
+}
+
+.post_details>h3+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .post_img img {
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
-  height: 100%;
+  padding: 10px 10px;
 }
 
 hr {
   margin-right: 30px;
+  color: #faf4f2;
 }
 
 
+.post_details {
+  padding: 25px 10px;
+}
+
+.post_details p {
+  color: gray;
+}
+
+.detail_event {
+  background-color: white;
+  margin-top: 40px;
+  padding: 15px 10px;
+
+}
+
+.event_item {
+  padding: 10px 20px;
+}
+.new_detail>h1 {
+  float: left;
+  width: 50%;
+}
 /*End news*/
 /* Start footer */
 .footer {
