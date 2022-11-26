@@ -55,37 +55,37 @@ body {
 /* End carousel */
 /* Activites */
 .activities {
-  margin-top: 20px;
+  margin: 100px 0px;
   text-align: center;
 }
 
-.activities__titles {
+.activities_titles {
   color: #8d8d8d;
   font-size: 24px;
 }
 
-.activities__item {
+.activities_item {
   width: 25%;
   float: left;
   padding: 15px;
 }
 
-.activities__card {
+.activities_card {
   padding: 40px;
   background-color: white;
   border-radius: 20px;
 }
 
-.activities__card img {
+.activities_card img {
   width: 100%;
   border-radius: 20px;
 }
 
-.activities__img {
+.activities_img {
   position: relative;
 }
 
-.activities__love {
+.activities_love {
   width: 42px;
   height: 42px;
   line-height: 42px;
@@ -100,24 +100,24 @@ body {
   font-weight: bolder;
 }
 
-.activities__love img {
+.activities_love img {
   width: 80%;
 }
 
-.activities__detail h3 {
+.activities_detail h3 {
   color: #3b3735;
   font-size: 18px;
   line-height: 28px;
   margin-top: 11px;
 }
 
-.activities__detail p {
+.activities_detail p {
   line-height: 28px;
   margin-top: 11px;
   margin-bottom: 25px;
 }
 
-.activities__detail button {
+.activities_detail button {
   padding: 13px 54px;
   border-radius: 25px;
   color: #8d8d8d;
@@ -126,10 +126,11 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   cursor: pointer;
+  margin-top: 20px;
   
 }
 
-.activities__all {
+.activities_all {
   color: #e76f51;
   border: 1px solid #e76f51;
   border-radius: 25px;
@@ -139,8 +140,8 @@ body {
 
 }
 
-.activities__detail button :hover,
-.activities__all:hover {
+.activities_detail button :hover,
+.activities_all:hover {
   background-color: #e76f51;
   color: white;
 }
@@ -155,19 +156,19 @@ body {
   border-radius: 20px;
 }
 
-.contact__left,
-.contact__right {
+.contact_left,
+.contact_right {
   float: left;
   width: 50%;
   padding: 20px 60px;
 }
 
 
-.contact__right {
+.contact_right {
   padding-top: 70px;
 }
 
-.contact__us,
+.contact_us,
 .contact__app {
   float: left;
   width: 50%;
@@ -178,15 +179,15 @@ body {
   width: 50%;
 }
 
-.contact__right p {
+.contact_right p {
   margin: 12px 0 30px;
 }
 
-.contact__right h3 {
+.contact_right h3 {
   margin-bottom: 21px;
 }
 
-.contact__us i {
+.contact_us i {
   color: #e76f51;
   font-size: 25px;
   margin: 10px;
@@ -207,30 +208,30 @@ body {
   margin-bottom: 21px;
 }
 
-.footer__about {
+.footer_about {
   float: left;
   width: 40%;
   line-height: 28px;
   padding: 0 20px;
 }
 
-.footer__list {
+.footer_list {
   float: left;
   width: 60%;
   padding: 0 20px;
 
 }
 
-.footer__nav {
+.footer_nav {
   float: left;
   width: 33.33%;
 }
 
-.footer__nav li {
+.footer_nav li {
   list-style: none;
   margin-bottom: 12px;
 }
-.footer__nav a {
+.footer_nav a {
   text-decoration: none;
   color: black;
 }
