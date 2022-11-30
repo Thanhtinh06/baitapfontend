@@ -1,0 +1,287 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html, body {
+  font-family: "Oswald",sans-serif;
+  color: white;
+}
+
+.clear {
+  clear: both;
+}
+
+.title--black {
+  color: black;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.title--white {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.title--p--first--red {
+  color: #e62b4a;
+  font-weight: 100;
+}
+
+.title--p--first--gray {
+  color: #888888;
+  font-weight: 100;
+}
+
+.title--p--last {
+  color: #888888;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* END GLOBAL */
+
+/* Header */
+
+header {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ffffff4a;
+  padding: 1.6rem 0;
+  background-color: transparent;
+  z-index: 10;
+
+}
+
+.header__content {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+
+}
+
+.header__logo {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+
+}
+.i--2rem {
+  font-size: 2rem;
+}
+
+.span--2rem {
+  font-size: 2rem;
+}
+
+.menu__content {
+  list-style: none;
+
+}
+
+.menu__content--inline {
+  display: inline;
+  padding: 0 1.7rem;
+}
+
+.menu__content--inline a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.7s;
+}
+
+.menu__content--inline.active a{
+  color: #e62b4a;
+}
+
+.menu__content--inline:hover a {
+  color: #e62b4a;
+}
+
+/* End header */
+
+/* Carousel*/
+
+.carousel {
+  background-image: url(../image/home_slider.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__content {
+  text-align: center;
+}
+
+.carousel__content p {
+  font-size: 1.5rem;
+}
+
+.carousel__content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.btn__readmore {
+  padding: 1rem 1.5rem;
+  background-color: #e62b4a;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 1px solid #e62b4a;
+}
+
+.btn__readmore:hover {
+  background-color: #af2239;
+  transition: all 0.7s;
+}
+
+
+@keyframes arrowDown{
+  from{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to{
+    opacity: 0;
+    transition: translateY(40px);
+  }
+}
+
+.arrow__down {
+  animation: arrowDown 1s linear 1s infinite;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+/* End Carousel */
+
+/* Service */
+
+.service {
+  background-color: black;
+  text-align: center;
+  padding: 90px 0;
+}
+
+
+.service__slider {
+  margin-top: 20px;
+  width: 75%;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.service__slider .item {
+  background-color: white;
+  color: #888888;
+  width: 13rem;
+  height: 15rem;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.service__slider .item::after {
+  content: '';
+  height: 0;
+  width: 5px;
+  background-color: #e62b4a;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.5s linear;
+}
+
+.service__slider .item:hover::after {
+  height: 100%;
+}
+
+.item--sizei {
+  font-size: 3rem;
+}
+.item--sizep {
+  font-size: 0.9rem;
+}
+
+/*Blog*/
+.blog {
+  text-align: center;
+  padding: 90px 0;
+}
+
+.blog__content {
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap: 30px;
+  width: 75%;
+  margin: 50px 0;
+}
+
+.blog__item--img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(50%) contrast(50%);
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.blog__metro1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.blog__metro10 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.blog__item {
+  position: relative;
+}
+.blog__overlay {
+  background-color: #e62b4a;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.blog__item:hover .blog__overlay{
+  opacity: 1;
+}
+
+.blog__icon {
+  background-color: white;
+  height: 100px;
+  line-height: 100px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+/*End Blog*/
