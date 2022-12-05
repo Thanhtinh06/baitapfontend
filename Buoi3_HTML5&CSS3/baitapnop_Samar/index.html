@@ -28,6 +28,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Font line awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
   <!--External CSS-->
   <link rel="stylesheet" href="./css/index.css">
   <title> Samar</title>
@@ -35,343 +38,457 @@
 
 <body>
   <!--Header-->
-  <header>
-    <div class="header__content">
-      <div class="logo">
-        <img src="" alt="">
+  <header class="block-padding">
+    <div class="container">
+      <div class="header__content">
+        <div class="logo">
+          <img src="./image/logo-2.png" alt="">
+        </div>
+        <nav class="navigater">
+          <ul>
+            <li class="nav--li">
+              <a href="#" class="nav--a">
+                <span>Home </span>
+                <i class="fa-solid fa-chevron-down i--font"></i>
+              </a>
+              <a href="#" class="nav--a">
+                <span>Page </span>
+                <i class="fa-solid fa-chevron-down i--font"></i>
+              </a>
+              <a href="#" class="nav--a">
+                <span>Services </span>
+                <i class="fa-solid fa-chevron-down i--font"></i>
+              </a>
+              <a href="#" class="nav--a">
+                <span>Post Layout </span>
+                <i class="fa-solid fa-chevron-down i--font"></i>
+              </a>
+              <a href="#" class="nav--a">
+                <span>Blog </span>
+                <i class="fa-solid fa-chevron-down i--font"></i>
+              </a>
+              <a href="#" class="nav--a">
+                <span>Contact Us </span>
+                <i class="fa-solid fa-chevron-down i--font"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="btnPrimary toRightlinear"> GET A QUOTE </button>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">
-              <p>Home</p>
-              <i></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <button class="btnSam"> GET A QUOTE </button>
     </div>
   </header>
   <!-- End header -->
 
   <!--Carousel-->
   <section class="carousel">
-    <div class="carousel__content">
-      <div class="title">
-        <p class="title__sub"></p>
-        <h2 class="title__main"></h2>
+    <div class="container">
+      <div class="carousel__content">
+        <div class="content__left">
+          <div class="title">
+            <p class="subtitle"> We are The Best </p>
+            <h2 class="maintitle">Freelance Product Designer Running</h2>
+          </div>
+          <div class="detail detail--font">
+            <p>We develop the relationships that underpin the next phase in your
+              <br> organisation’s growth.
+            </p>
+            <i class="fa-solid fa-check detail--i toRightlinear"></i>
+            <span class="detail--font20">Master's degree in designing</span>
+            <br>
+            <i class="fa-solid fa-check detail--i toRightlinear"></i>
+            <span class="detail--font20"> Outstanding mobile design
+            </span>
+          </div>
+          <button class="btnPrimary toRightlinear"> Get started</button>
+        </div>
+        <div class="content__right">
+          <div class="carousel__image">
+            <img src="./image/pic3_1.png" alt="">
+          </div>
+        </div>
       </div>
-      <div class="detail">
-        <p></p>
-        <i></i>
-        <p></p>
-        <i></i>
-        <p></p>
-      </div>
-      <button class="btnSam"></button>
-    </div>
-    <div class="carousel__image">
-      <img src="" alt="">
     </div>
   </section>
   <!--End Carousel-->
   <!-- Service -->
-  <section class="service">
-    <div class="title">
-        <p class="title__sub"></p>
-        <h2 class="title__main"></h2>
+  <section class="services block-padding">
+    <div class="container ">
+      <div class="title title--center">
+        <p class="subtitle">What We Do Best</p>
+        <h2 class="maintitle">Our Digital Services</h2>
       </div>
-    <div class="service__content">
-      <div class="service__item">
-        <img src="" alt="">
-        <p class="item__title"></p>
-        <p class="item__detail"></p>
-      </div>
-      <div class="service__item">
-        <img src="" alt="">
-        <p class="item__title"></p>
-        <p class="item__detail"></p>
-      </div>
-      <div class="service__item">
-        <img src="" alt="">
-        <p class="item__title"></p>
-        <p class="item__detail"></p>
+      <div class="service__content">
+        <div class="service__item">
+          <img src="./image/pic1_3.jpg" alt="">
+          <h3 class="item--title">Web Development</h3>
+          <p class="item__detail">Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus
+            quis magna quis.</p>
+        </div>
+        <div class="service__item">
+          <img src="./image/pic2_2.jpg" alt="">
+          <h3 class="item--title">Strategy & Research</h3>
+          <p class="item__detail">Vestibulum a efficitur ex. Ut iaculis <br> dapibus iaculis. Praesent lacus magna, <br>
+            rhoncus quis magna quis.</p>
+        </div>
+        <div class="service__item">
+          <img src="./image/pic3_2.jpg" alt="">
+          <h3 class="item--title">Growth Tracking</h3>
+          <p class="item__detail">Vestibulum a efficitur ex. Ut iaculis <br> dapibus iaculis. Praesent lacus magna, <br>
+            rhoncus quis magna quis.</p>
+        </div>
       </div>
     </div>
   </section>
   <!-- End Service -->
   <!-- About us -->
-  <section class="about">
-    <div class="about__image">
-      <img src="" alt="">
-    </div>
+  <section class="about section-innear">
     <div class="about__content">
+      <div class="about__image">
+        <img src="./image/pic1.jpg" alt="">
+      </div>
+      <div class="about__left">
+        <div class="title">
+          <p class="subtitle">About Us</p>
+          <h2 class="maintitle">Build Your
+            <br>Business Website
+            <br>Better
+          </h2>
+        </div>
+        <div class="detail">
+          <p>Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus blandit,
+            dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed euismod turpis id
+            nibh
+            suscipit semper. Pellentesque dapibus risus arcu.</p>
+          <ul class="li--none">
+            <li><i class="fa-regular fa-circle-check color-pink i--font24"></i> We support programs that create
+              advancement opportunities for people. </li>
+            <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
+              Get a view of events and trends. Be updated on our recent news.
+            </li>
+            <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
+              Finally, it all comes down to people. Creating a winning team.
+            </li>
+            <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
+              Get a view of events and trends. Be updated on our recent news.
+            </li>
+          </ul>
+        </div>
+        <button class="btnPrimary toRightlinear">Learn More</button>
+      </div>
+    </div>
+    </section>
+    <!-- End About us -->
+    <!-- Number -->
+    <section class="number">
+      <div class="number__item">
+        <i class="fa-regular fa-face-smile-beam"></i>
+        <p class="number__item--digit">18 Ml</p>
+        <p class="number__item--text">Satisfied Clients</p>
+      </div>
+      <div class="number__item">
+        <i class="fa-solid fa-chart-line"></i>
+        <p class="number__item--digit">20 Ml</p>
+        <p class="number__item--text">Project Completed</p>
+      </div>
+      <div class="number__item">
+        <i></i>
+        <p class="number__item--digit">30 Ml</p>
+        <p class="number__item--text">Project Lunched</p>
+      </div>
+      <div class="number__item">
+        <i></i>
+        <p class="number__item--digit">50</p>
+        <p class="number__item--text">Years Completed</p>
+      </div>
+
+    </section>
+    <!-- End Number -->
+    <!-- Feature -->
+    <section class="feature">
+      <div class="feature__content">
+        <div class="title">
+          <p class="subtitle"></p>
+          <h2 class="maintitle"></h2>
+        </div>
+        <div class="detail">
+          <div class="feature__item">
+            <div class="feature__icon">
+              <i></i>
+            </div>
+            <div class="feature__text">
+              <h3 class="item__title"></h3>
+              <p class="item__detail"></p>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <i></i>
+            </div>
+            <div class="feature__text">
+              <h3 class="item__title"></h3>
+              <p class="item__detail"></p>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <i></i>
+            </div>
+            <div class="feature__text">
+              <h3 class="item__title"></h3>
+              <p class="item__detail"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__image">
+        <img src="" alt="">
+      </div>
+    </section>
+    <!-- Feature -->
+    <!-- Portfolio -->
+    <section class="portfolio">
       <div class="title">
-        <p class="title__sub"></p>
-        <h2 class="title__main"></h2>
+        <p class="subtitle"></p>
+        <h2 class="maintitle"></h2>
       </div>
-      <div class="detail">
-        <p></p>
-        <i></i>
-        <p></p>
-        <i></i>
-        <p></p>
-        <i></i>
-        <p></p>
-        <i></i>
-        <p></p>
+      <div class="portfolio__content">
+        <div class="portfolio__item image1">
+          <img src="" alt="">
+        </div>
+        <div class="portfolio__item image2">
+          <img src="" alt="">
+        </div>
+        <div class="portfolio__item">
+          <img src="" alt="">
+        </div>
+        <div class="portfolio__item">
+          <img src="" alt="">
+        </div>
+        <div class="portfolio__item">
+          <img src="" alt="">
+        </div>
+        <div class="portfolio__item image5">
+          <img src="" alt="">
+        </div>
+        <div class="portfolio__item image6">
+          <img src="" alt="">
+        </div>
       </div>
-      <button class="btnSam"></button>
-    </div>
+    </section>
+    <!-- End Portfolio -->
 
-  </section>
-  <!-- End About us -->
-  <!-- Number -->
-  <section class="number">
-    <div class="number__item">
-      <i></i>
-      <p class="number__item--digit"></p>
-      <p class="number__item--text"></p>
-    </div>
-    <div class="number__item">
-      <i></i>
-      <p class="number__item--digit"></p>
-      <p class="number__item--text"></p>
-    </div>
-    <div class="number__item">
-      <i></i>
-      <p class="number__item--digit"></p>
-      <p class="number__item--text"></p>
-    </div>
-    <div class="number__item">
-      <i></i>
-      <p class="number__item--digit"></p>
-      <p class="number__item--text"></p>
-    </div>
-
-  </section>
-  <!-- End Number -->
-  <!-- Feature -->
-  <section class="feature">
-    <div class="feature__content">
+    <!-- Plan -->
+    <section class="plan">
       <div class="title">
-        <p class="title__sub"></p>
-        <h2 class="title__main"></h2>
+        <p class="subtitle"></p>
+        <h2 class="maintitle"></h2>
       </div>
-      <div class="detail">
-        <div class="feature__item">
-          <div class="feature__icon">
+      <div class="plan__content">
+        <div class="plan__item">
+          <h3 class="item__title"></h3>
+          <img src="" alt="">
+          <span class="price"></span>
+          <hr>
+          <div class="item__detail">
             <i></i>
-          </div>
-          <div class="feature__text">
-            <p class="item__title"></p>
-            <p class="item__detail"></p>
-          </div>
-        </div>
-        <div class="feature__item">
-          <div class="feature__icon">
+            <p></p>
             <i></i>
-          </div>
-          <div class="feature__text">
-            <p class="item__title"></p>
-            <p class="item__detail"></p>
-          </div>
-        </div>
-        <div class="feature__item">
-          <div class="feature__icon">
+            <p></p>
             <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
           </div>
-          <div class="feature__text">
-            <p class="item__title"></p>
-            <p class="item__detail"></p>
+          <button class="btnPrimary toRightlinear"></button>
+        </div>
+        <div class="plan__item">
+          <h3 class="item__title"></h3>
+          <img src="" alt="">
+          <span class="price"></span>
+          <hr>
+          <div class="item__detail">
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+          </div>
+          <button class="btnPrimary toRightlinear"></button>
+        </div>
+        <div class="plan__item">
+          <h3 class="item__title"></h3>
+          <img src="" alt="">
+          <span class="price"></span>
+          <hr>
+          <div class="item__detail">
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+            <i></i>
+            <p></p>
+          </div>
+          <button class="btnPrimary toRightlinear"></button>
+        </div>
+      </div>
+    </section>
+    <!-- End Plan -->
+    <!-- Testimonial -->
+    <section class="testimonial">
+      <div class="title">
+        <p class="subtitle"></p>
+        <h2 class="maintitle"></h2>
+      </div>
+      <div class="testimonial__content">
+        <div class="testimonial__image">
+
+        </div>
+        <div class="testimonial__text">
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- End Testimonial -->
+    <!-- Blog -->
+    <section class="blog">
+      <div class="title">
+        <p class="subtitle"></p>
+        <h2 class="maintitle"></h2>
+      </div>
+      <div class="blog__content">
+        <img src="" alt="">
+        <div class="article__date">
+          <p class="date"></p>
+        </div>
+        <div class="article__content">
+          <h3 class="item__title"></h3>
+          <p class="item__detail"></p>
+        </div>
+        <hr>
+        <div class="author_comment">
+          <div class="author">
+            <i></i>
+            <p></p>
+          </div>
+          <div class="comment">
+            <i></i>
+            <p></p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="feature__image">
-      <img src="" alt="">
-    </div>
-  </section>
-  <!-- Feature -->
-  <!-- Portfolio -->
-  <section class="portfolio">
-    <div class="title">
-        <p class="title__sub"></p>
-        <h2 class="title__main"></h2>
-      </div>
-    <div class="portfolio__content">
-      <div class="portfolio__item image1">
-        <img src="" alt="">
-      </div>
-      <div class="portfolio__item image2">
-        <img src="" alt="">
-      </div>
-      <div class="portfolio__item">
-        <img src="" alt="">
-      </div>
-      <div class="portfolio__item">
-        <img src="" alt="">
-      </div>
-      <div class="portfolio__item">
-        <img src="" alt="">
-      </div>
-      <div class="portfolio__item image5">
-        <img src="" alt="">
-      </div>
-      <div class="portfolio__item image6">
-        <img src="" alt="">
-      </div>
-    </div>
-  </section>
-  <!-- End Portfolio -->
+    </section>
 
-  <!-- Plan -->
-  <section class="plan">
-    <div class="title">
-        <p class="title__sub"></p>
-        <h2 class="title__main"></h2>
-      </div>
-    <div class="plan__content">
-      <div class="plan__item">
-        <p class="item__title"></p>
-        <img src="" alt="">
-        <span class="price"></span>
-        <hr>
-        <div class="item__detail">
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
+    <!-- End Blog -->
+    <!--Subcribe-->
+    <section class="subcribe">
+      <p> Subscribe To Our Newsletter </p>
+      <form action="">
+        <input type="email">
+        <button class="btnPrimary toRightlinear"> <i></i></button>
+      </form>
+    </section>
+    <!--End Subcribe-->
+
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="footer__infor">
+          <i></i>
+          <p></p>
+          <i></i>
+          <p></p>
+          <i></i>
+          <p></p>
         </div>
-        <button class="btnSam"></button>
-      </div>
-      <div class="plan__item">
-        <p class="item__title"></p>
-        <img src="" alt="">
-        <span class="price"></span>
-        <hr>
-        <div class="item__detail">
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
+        <div class="footer__item">
+          <i class="fa-solid fa-chevron-right"></i>
+          <p></p>
+          <i></i>
+          <p></p>
+          <i></i>
+          <p></p>
+          <i></i>
+          <p></p>
+          <i></i>
+          <p></p>
         </div>
-        <button class="btnSam"></button>
       </div>
-      <div class="plan__item">
-        <p class="item__title"></p>
-        <img src="" alt="">
-        <span class="price"></span>
-        <hr>
-        <div class="item__detail">
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
-          <i></i> <p></p>
+    </footer>
+    <!--End Footer-->
+    <!--Copyright-->
+    <section class="copyright">
+      <div class="container">
+        <p></p>
+        <div class="socials">
+          <i></i>
         </div>
-        <button class="btnSam"></button>
       </div>
-    </div>
-  </section>
-  <!-- End Plan -->
-  <!-- Testimonial -->
-  <section class="testimonial">
-    <div class="title">
-        <p class="title__sub"></p>
-        <h2 class="title__main"></h2>
-    </div>
-    <div class="testimonial__content">
-      <div class="testimonial__image">
-
-      </div>
-      <div class="testimonial__text">
-
-      </div>
-    </div>
-
-  </section>
-
-  <!-- End Testimonial -->
-  
+    </section>
+    <!--End copyringht -->
+    <!--Back To Top-->
+    <a href="" class="backToTop"><i></i></a>
 
 
 
+    <!--Script-->
+    <!--Slick-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--Script-->
-  <!--Slick-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-    crossorigin="anonymous"></script>
-  <script>
-    //SLICK
-    $('.slick--content').slick({
-      infinite: true,
-      slidesToShow: 5,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      speed: 1100,
-      dots: true,
-    });
-  </script>
-  <!--End Slick-->
-  <!--Fancy Box-->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"></script>
+    <script>
+      //SLICK
+      $('.slick--content').slick({
+        infinite: true,
+        slidesToShow: 5,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 1100,
+        dots: true,
+      });
+    </script>
+    <!--End Slick-->
+    <!--Fancy Box-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
       //  JavaScript will go here
-  </script>
-  <!--End Fancybox-->
-  <!--Couter Number-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-    crossorigin="anonymous"></script>
-  <script src="jquery.countup.js"></script>
-  <script>
-    $('.counter').countUp({
-    });
-  </script>
+    </script>
+    <!--End Fancybox-->
+    <!--Couter Number-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"></script>
+    <script src="jquery.countup.js"></script>
+    <script>
+      $('.counter').countUp({
+      });
+    </script>
 
-  <!--End Couter-->
+    <!--End Couter-->
 
-  <!--End Script-->
+    <!--End Script-->
 </body>
 
 </html>

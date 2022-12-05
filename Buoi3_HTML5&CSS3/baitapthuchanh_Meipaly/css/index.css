@@ -217,6 +217,22 @@ header {
 }
 .item--sizep {
   font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.slick-dots li button:before {
+  color: grey;
+  font-size: 1rem;
+}
+
+.slick-dots li button:before:hover {
+  color: white;
+  transition: all 0.5s;
+
+}
+
+.slick-dots li.slick-active button:before {
+  color: #e62b4a;
 }
 
 /*Blog*/
@@ -259,6 +275,7 @@ header {
 
 .blog__overlay {
   position: absolute;
+  background-color: rgba(230, 43, 74, 0.6);
   top: 0;
   left: 0;
   width: 100%;
@@ -266,7 +283,6 @@ header {
   padding: 25px;
   opacity: 0;
   transition: all 0.5s;
-  background-color: rgba(230, 43, 74, 0.6);
 }
 
 .blog__item:hover .blog__overlay {
@@ -290,16 +306,19 @@ header {
   text-align: center;
   transform: translateY(20px);
   transition: all 0.8s;
+  opacity: 0;
 }
 
 .blog__icon i:hover {
   background-color: black;
   color: white;
   transition: all 0.8s;
+  opacity: 1;
 }
 
 .blog__item:hover .blog__icon i {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .blog__text {
@@ -308,6 +327,7 @@ header {
   bottom: 25px;
   transform: translateY(20px);
   transition: all 0.8s;
+  opacity: 0;
 }
 
 .blog__text p {
@@ -316,6 +336,7 @@ header {
 
 .blog__item:hover .blog__text{
   transform: translateY(0);
+  opacity: 1;
 }
 
 .text-align-left {
@@ -461,6 +482,7 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__icon i {
@@ -486,4 +508,23 @@ footer {
 
 .footer__text p {
   font-size: 14px;
+}
+
+/* Back To Top*/
+html {
+  position: relative;
+}
+a.backToTop {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(0,0,0,0.25);
+  position:fixed;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 5%;
+  font-weight: bold;
+  font-size: 20px;
 }
