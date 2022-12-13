@@ -150,18 +150,21 @@ header {
 @keyframes arrowDown{
   from{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
+
   to{
     opacity: 0;
-    transition: translateY(40px);
+    transform: translateY(40px);
   }
 }
 
-.arrow__down {
-  animation: arrowDown 1s linear 1s infinite;
+.down {
+  animation-name: arrowDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   font-size: 2rem;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* End Carousel */
@@ -511,13 +514,11 @@ footer {
 }
 
 /* Back To Top*/
-html {
-  position: relative;
-}
+
 a.backToTop {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   background-color: rgba(0,0,0,0.25);
   position:fixed;
   right: 20px;
@@ -527,4 +528,55 @@ a.backToTop {
   border-radius: 5%;
   font-weight: bold;
   font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
 }
+
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: .5;
+}
+
+/* .square {
+  width: 200px;
+  height: 200px;
+  background-color: #e62b4a;
+  position: relative;
+  animation-name: demoAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+
+@keyframes demoAnimation {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 0;
+    left: 200px;
+
+  }
+
+  50% {
+    top: 200px;
+    left: 200px;
+
+  }
+
+  75% {
+    top: 200px;
+    left: 0;
+
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+} */

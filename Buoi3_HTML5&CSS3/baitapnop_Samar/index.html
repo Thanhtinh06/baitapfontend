@@ -5,31 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SLICK -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-    crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
-    crossorigin="anonymous" />
-  <!--End slick-->
-  <!--Fancy Box-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  <!--Animate-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!--Google fonts-->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
   <!--Font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <!--Font line awesome-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  
+    <!--Flaticon-->
+  <link rel="stylesheet" href="./css/flaticon/flaticon.css">
+  
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
+  <!--Lightgallery-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/css/lightgallery-bundle.min.css">
 
   <!--External CSS-->
   <link rel="stylesheet" href="./css/index.css">
@@ -38,36 +39,34 @@
 
 <body>
   <!--Header-->
-  <header class="block-padding">
+  <header>
     <div class="container">
-      <div class="header__content">
-        <div class="logo">
-          <img src="./image/logo-2.png" alt="">
-        </div>
-        <nav class="navigater">
+      <div class="header__content flex-space">
+        <img src="./image/logo-2.png" alt="">
+        <nav class="flex-space">
           <ul>
-            <li class="nav--li">
-              <a href="#" class="nav--a">
+            <li>
+              <a href="#">
                 <span>Home </span>
                 <i class="fa-solid fa-chevron-down i--font"></i>
               </a>
-              <a href="#" class="nav--a">
+              <a href="#">
                 <span>Page </span>
                 <i class="fa-solid fa-chevron-down i--font"></i>
               </a>
-              <a href="#" class="nav--a">
+              <a href="#">
                 <span>Services </span>
                 <i class="fa-solid fa-chevron-down i--font"></i>
               </a>
-              <a href="#" class="nav--a">
+              <a href="#">
                 <span>Post Layout </span>
                 <i class="fa-solid fa-chevron-down i--font"></i>
               </a>
-              <a href="#" class="nav--a">
+              <a href="#">
                 <span>Blog </span>
                 <i class="fa-solid fa-chevron-down i--font"></i>
               </a>
-              <a href="#" class="nav--a">
+              <a href="#">
                 <span>Contact Us </span>
                 <i class="fa-solid fa-chevron-down i--font"></i>
               </a>
@@ -83,37 +82,41 @@
   <!--Carousel-->
   <section class="carousel">
     <div class="container">
-      <div class="carousel__content">
+      <div class="carousel__content flex-space">
         <div class="content__left">
           <div class="title">
-            <p class="subtitle"> We are The Best </p>
-            <h2 class="maintitle">Freelance Product Designer Running</h2>
+            <p class="subtitle wow animate__animated animate__fadeInUp"> We are The Best </p>
+            <h2 class="maintitle wow animate__animated animate__fadeInUp animate__delay-1s">Freelance Product Designer
+              Running</h2>
           </div>
           <div class="detail detail--font">
-            <p>We develop the relationships that underpin the next phase in your
+            <p class="animate__animated animate__fadeInUp animate__delay-2s">We develop the relationships that underpin
+              the next phase in your
               <br> organisation’s growth.
             </p>
-            <i class="fa-solid fa-check detail--i toRightlinear"></i>
-            <span class="detail--font20">Master's degree in designing</span>
-            <br>
-            <i class="fa-solid fa-check detail--i toRightlinear"></i>
-            <span class="detail--font20"> Outstanding mobile design
-            </span>
+            <div class="animate__animated animate__fadeInUp animate__delay-3s">
+              <i class="fa-solid fa-check formatIcon toRightlinear"></i>
+              <span class="detail--font20">Master's degree in designing</span>
+              <br>
+              <i class="fa-solid fa-check formatIcon toRightlinear"></i>
+              <span class="detail--font20"> Outstanding mobile design
+              </span>
+            </div>
           </div>
-          <button class="btnPrimary toRightlinear"> Get started</button>
+          <button class="btnPrimary toRightlinear animate__animated animate__fadeInUp animate__delay-4s"> Get
+            started</button>
         </div>
-        <div class="content__right">
-          <div class="carousel__image">
-            <img src="./image/pic3_1.png" alt="">
-          </div>
+        <div class="content__right wow  animate__animated animate__fadeInUp animate__delay-3s">
+          <img src="./image/pic3_1.png" alt="">
         </div>
       </div>
     </div>
   </section>
   <!--End Carousel-->
+
   <!-- Service -->
-  <section class="services block-padding">
-    <div class="container ">
+  <section class="services section-innear">
+    <div class="container">
       <div class="title title--center">
         <p class="subtitle">What We Do Best</p>
         <h2 class="maintitle">Our Digital Services</h2>
@@ -141,354 +144,669 @@
     </div>
   </section>
   <!-- End Service -->
+
   <!-- About us -->
   <section class="about section-innear">
-    <div class="about__content">
-      <div class="about__image">
-        <img src="./image/pic1.jpg" alt="">
-      </div>
-      <div class="about__left">
-        <div class="title">
-          <p class="subtitle">About Us</p>
-          <h2 class="maintitle">Build Your
-            <br>Business Website
-            <br>Better
-          </h2>
+    <div class=container>
+      <div class="about__content flex-space flex--flexEnd">
+        <div class="about__image wow animate__animated animate__fadeInLeft">
+          <img src="./image/pic1.jpg" alt="">
         </div>
-        <div class="detail">
-          <p>Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus blandit,
-            dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed euismod turpis id
-            nibh
-            suscipit semper. Pellentesque dapibus risus arcu.</p>
-          <ul class="li--none">
-            <li><i class="fa-regular fa-circle-check color-pink i--font24"></i> We support programs that create
-              advancement opportunities for people. </li>
-            <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
-              Get a view of events and trends. Be updated on our recent news.
-            </li>
-            <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
-              Finally, it all comes down to people. Creating a winning team.
-            </li>
-            <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
-              Get a view of events and trends. Be updated on our recent news.
-            </li>
-          </ul>
+        <div class="about__right wow animate__animated animate__fadeInRight">
+          <div class="title">
+            <p class="subtitle">About Us</p>
+            <h2 class="maintitle">Build Your
+              <br>Business Website
+              <br>Better
+            </h2>
+          </div>
+          <div class="feauture__detail">
+            <p>Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus blandit,
+              dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed euismod turpis id
+              nibh
+              suscipit semper. Pellentesque dapibus risus arcu.</p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check color-pink i--font24"></i> We support programs that create
+                advancement opportunities for people. </li>
+              <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
+                Get a view of events and trends. Be updated on our recent news.
+              </li>
+              <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
+                Finally, it all comes down to people. Creating a winning team.
+              </li>
+              <li><i class="fa-regular fa-circle-check color-pink i--font24"></i>
+                Get a view of events and trends. Be updated on our recent news.
+              </li>
+            </ul>
+          </div>
+          <button class="btnPrimary toRightlinear">Learn More</button>
         </div>
-        <button class="btnPrimary toRightlinear">Learn More</button>
       </div>
     </div>
-    </section>
-    <!-- End About us -->
-    <!-- Number -->
-    <section class="number">
+  </section>
+  <!-- End About us -->
+
+  <!-- Number -->
+  <section class="number section-innear">
+    <div class="number__content container flex-space flex--flexAround wow ">
       <div class="number__item">
-        <i class="fa-regular fa-face-smile-beam"></i>
-        <p class="number__item--digit">18 Ml</p>
+        <i class="flaticon-smile toRightlinear"></i>
+        <p class="color-pink textFont65"><span class="counter">18 </span> Ml</p>
         <p class="number__item--text">Satisfied Clients</p>
       </div>
       <div class="number__item">
-        <i class="fa-solid fa-chart-line"></i>
-        <p class="number__item--digit">20 Ml</p>
+        <i class="flaticon-line-chart toRightlinear"></i>
+        <p class="color-pink textFont65"><span class="counter">20 </span> Ml</p>
         <p class="number__item--text">Project Completed</p>
       </div>
       <div class="number__item">
-        <i></i>
-        <p class="number__item--digit">30 Ml</p>
+        <i class="flaticon-startup toRightlinear"></i>
+        <p class="color-pink textFont65"><span class="counter">30 </span> Ml</p>
         <p class="number__item--text">Project Lunched</p>
       </div>
       <div class="number__item">
-        <i></i>
-        <p class="number__item--digit">50</p>
+        <i class="flaticon-confetti toRightlinear"></i>
+        <p class="color-pink textFont65"><span class="counter">50 </span></p>
         <p class="number__item--text">Years Completed</p>
       </div>
+    </div>
+  </section>
+  <!-- End Number -->
 
-    </section>
-    <!-- End Number -->
-    <!-- Feature -->
-    <section class="feature">
-      <div class="feature__content">
+  <!-- Feature -->
+  <section class="feature section-innear">
+    <div class="feature__content container flex-space">
+      <div class="feature__right">
         <div class="title">
-          <p class="subtitle"></p>
-          <h2 class="maintitle"></h2>
+          <p class="subtitle">Our Features</p>
+          <h2 class="maintitle">Behind The Story
+            Of Samar Agency
+          </h2>
         </div>
-        <div class="detail">
-          <div class="feature__item">
+        <div class="feature__detail">
+          <div class="feature__item flex-space flex--flexAround feature1">
             <div class="feature__icon">
-              <i></i>
+              <i class="flaticon-idea"></i>
             </div>
             <div class="feature__text">
-              <h3 class="item__title"></h3>
-              <p class="item__detail"></p>
+              <h3 class="item--title color-black">Idea & Analysis Gathering</h3>
+              <p class="item__detail">Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                augue.</p>
             </div>
           </div>
-          <div class="feature__item">
+          <div class="feature__item flex-space feature2">
             <div class="feature__icon">
-              <i></i>
+              <i class="flaticon-coding"></i>
             </div>
             <div class="feature__text">
-              <h3 class="item__title"></h3>
-              <p class="item__detail"></p>
+              <h3 class="item--title ">Design & Developing</h3>
+              <p class="item__detail">Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                augue.</p>
             </div>
           </div>
-          <div class="feature__item">
+          <div class="feature__item flex-space feature3">
             <div class="feature__icon">
-              <i></i>
+              <i class="flaticon-rocket"></i>
             </div>
             <div class="feature__text">
-              <h3 class="item__title"></h3>
-              <p class="item__detail"></p>
+              <h3 class="item--title">Testing & Lunching</h3>
+              <p class="item__detail">Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                augue</p>
             </div>
           </div>
         </div>
       </div>
       <div class="feature__image">
-        <img src="" alt="">
+        <img src="./image/pic3.png" alt="">
       </div>
-    </section>
-    <!-- Feature -->
-    <!-- Portfolio -->
-    <section class="portfolio">
-      <div class="title">
-        <p class="subtitle"></p>
-        <h2 class="maintitle"></h2>
-      </div>
-      <div class="portfolio__content">
-        <div class="portfolio__item image1">
-          <img src="" alt="">
-        </div>
-        <div class="portfolio__item image2">
-          <img src="" alt="">
-        </div>
-        <div class="portfolio__item">
-          <img src="" alt="">
-        </div>
-        <div class="portfolio__item">
-          <img src="" alt="">
-        </div>
-        <div class="portfolio__item">
-          <img src="" alt="">
-        </div>
-        <div class="portfolio__item image5">
-          <img src="" alt="">
-        </div>
-        <div class="portfolio__item image6">
-          <img src="" alt="">
-        </div>
-      </div>
-    </section>
-    <!-- End Portfolio -->
+    </div>
+  </section>
+  <!-- Feature -->
 
-    <!-- Plan -->
-    <section class="plan">
-      <div class="title">
-        <p class="subtitle"></p>
-        <h2 class="maintitle"></h2>
+  <!-- Portfolio -->
+  <section class="portfolio section-innear">
+    <div class="portfolio__content container">
+      <div class="title title--center">
+        <p class="subtitle">Portfolio</p>
+        <h2 class="maintitle">Our Latest Work</h2>
+      </div>
+      <div class="portfolio__image" id="animated-thumbnails">
+        <div class="portfolio__item image1 wow animate__animated">
+          <img src="./image/pic1_2.jpg" alt="">
+          <div class="overlay">
+            <div class="overlay__text">
+              <h3>Software Landing</h3>
+              <p>By Jhone Doe</p>
+            </div>
+            <div class="overlay__icon">
+              <a data-exthumbimage="./image/pic1_2.jpg" class="lightimg" data-src="./image/pic1_2.jpg"
+                data-sub-html="Design"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item image2 wow animate__animated">
+          <img src="./image/pic2_1.jpg" alt="">
+          <div class="overlay">
+            <div class="overlay__text">
+              <h3>Software Landing</h3>
+              <p>By Jhone Doe</p>
+            </div>
+            <div class="overlay__icon">
+              <a data-exthumbimage="./image/pic2_1.jpg" class="lightimg" data-src="./image/pic2_1.jpg"
+                data-sub-html="Design"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item image wow animate__animated">
+          <img src="./image/pic3_1.jpg" alt="">
+          <div class="overlay">
+            <div class="overlay__text">
+              <h3>Software Landing</h3>
+              <p>By Jhone Doe</p>
+            </div>
+            <div class="overlay__icon">
+              <a data-exthumbimage="./image/pic3_1.jpg" class="lightimg" data-src="./image/pic3_1.jpg"
+                data-sub-html="Design"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item image wow animate__animated">
+          <img src="./image/pic4.jpg" alt="">
+          <div class="overlay">
+            <div class="overlay__text">
+              <h3>Software Landing</h3>
+              <p>By Jhone Doe</p>
+            </div>
+            <div class="overlay__icon">
+              <a data-exthumbimage="./image/pic4.jpg" class="lightimg" data-src="./image/pic4.jpg"
+                data-sub-html="Design"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item image5 wow animate__animated">
+          <img src="./image/pic5.jpg" alt="">
+          <div class="overlay">
+            <div class="overlay__text">
+              <h3>Software Landing</h3>
+              <p>By Jhone Doe</p>
+            </div>
+            <div class="overlay__icon">
+              <a data-exthumbimage="./image/pic5.jpg" class="lightimg" data-src="./image/pic5.jpg"
+                data-sub-html="Design"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item image6 wow animate__animated">
+          <img src="./image/pic6.jpg" alt="">
+          <div class="overlay">
+            <div class="overlay__text">
+              <h3>Software Landing</h3>
+              <p>By Jhone Doe</p>
+            </div>
+            <div class="overlay__icon">
+              <a data-exthumbimage="./image/pic6.jpg" class="lightimg" data-src="./image/pic6.jpg"
+                data-sub-html="Design"><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio -->
+
+  <!-- Plan -->
+  <section class="plan section-innear">
+    <div class="container">
+      <div class="title title--center">
+        <p class="subtitle">Choose Your Plan</p>
+        <h2 class="maintitle">Choose Your Plan</h2>
       </div>
       <div class="plan__content">
         <div class="plan__item">
-          <h3 class="item__title"></h3>
-          <img src="" alt="">
-          <span class="price"></span>
-          <hr>
-          <div class="item__detail">
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
+          <div class="plan__title">
+            <h3>Basic Plan</h3>
+            <img src="./image/pic4_1.jpg" alt="">
+            <div><span class="price">$49</span><span>/Month</span></div>
           </div>
-          <button class="btnPrimary toRightlinear"></button>
+          <div class="item__detail">
+            <ul>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i> Graphic Design </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                Web Design
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                UI/UX
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                HTML/CSS
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                SEO Marketing
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                Business Analysis
+              </li>
+            </ul>
+          </div>
+          <button class="btnPrimary toRightlinear">Start Now</button>
         </div>
         <div class="plan__item">
-          <h3 class="item__title"></h3>
-          <img src="" alt="">
-          <span class="price"></span>
-          <hr>
-          <div class="item__detail">
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
+          <div class="plan__title">
+            <h3>Basic Plan</h3>
+            <img src="./image/pic5_1.jpg" alt="">
+            <div><span class="price">$49</span><span>/Month</span></div>
           </div>
-          <button class="btnPrimary toRightlinear"></button>
+          <div class="item__detail">
+            <ul>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i> Graphic Design </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                Web Design
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                UI/UX
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                HTML/CSS
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                SEO Marketing
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                Business Analysis
+              </li>
+            </ul>
+          </div>
+          <button class="btnPrimary toRightlinear">Start Now</button>
         </div>
         <div class="plan__item">
-          <h3 class="item__title"></h3>
-          <img src="" alt="">
-          <span class="price"></span>
-          <hr>
-          <div class="item__detail">
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
-            <i></i>
-            <p></p>
+          <div class="plan__title">
+            <h3>Basic Plan</h3>
+            <img src="./image/pic6_1.jpg" alt="">
+            <div><span class="price">$49</span><span>/Month</span></div>
           </div>
-          <button class="btnPrimary toRightlinear"></button>
+          <div class="item__detail">
+            <ul>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i> Graphic Design </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                Web Design
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                UI/UX
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                HTML/CSS
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                SEO Marketing
+              </li>
+              <li><i class="fa-solid fa-check formatIcon i--font12"></i>
+                Business Analysis
+              </li>
+            </ul>
+          </div>
+          <button class="btnPrimary toRightlinear">Start Now</button>
         </div>
       </div>
-    </section>
-    <!-- End Plan -->
-    <!-- Testimonial -->
-    <section class="testimonial">
-      <div class="title">
-        <p class="subtitle"></p>
-        <h2 class="maintitle"></h2>
+    </div>
+  </section>
+  <!-- End Plan -->
+
+  <!-- Testimonial -->
+  <section class="testimonial section-innear">
+    <div class="container">
+      <div class="title title--center">
+        <p class="subtitle">Testimonial</p>
+        <h2 class="maintitle">What Our Clients Say’s</h2>
       </div>
-      <div class="testimonial__content">
-        <div class="testimonial__image">
-
+      <div class="testimonial-content">
+        <!-- Swiper -->
+        <div class="swiper-container testimonial-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-pic">
+                <img src="https://samar.dexignzone.com/xhtml/images/testimonials/pic1.jpg" alt="">
+                <div class="shape-bx"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-pic">
+                <img src="https://samar.dexignzone.com/xhtml/images/testimonials/pic2.jpg" alt="">
+                <div class="shape-bx"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-pic">
+                <img src="https://samar.dexignzone.com/xhtml/images/testimonials/pic3.jpg" alt="">
+                <div class="shape-bx"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="testimonial__text">
 
+        <div class="swiper-container testimonial-comment">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial__text">
+                <div class="text__top">
+                  <i class="flaticon-quotation"></i>
+                  <h3>Cak Dikin 1</h3>
+                  <p class="color-pink">CEO &amp; Founder </p>
+                </div>
+                <div class="text__bottom">
+                  <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                    vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc.
+                    Etiam sed facilisis erat.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial__text">
+                <div class="text__top">
+                  <i class="flaticon-quotation"></i>
+                  <h3>Cak Dikin 1</h3>
+                  <p class="color-pink">CEO &amp; Founder </p>
+                </div>
+                <div class="text__bottom">
+                  <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                    vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc.
+                    Etiam sed facilisis erat.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial__text">
+                <div class="text__top">
+                  <i class="flaticon-quotation"></i>
+                  <h3>Cak Dikin 1</h3>
+                  <p class="color-pink">CEO &amp; Founder </p>
+                </div>
+                <div class="text__bottom">
+                  <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                    vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc.
+                    Etiam sed facilisis erat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- End Testimonial -->
 
-    </section>
-
-    <!-- End Testimonial -->
-    <!-- Blog -->
-    <section class="blog">
-      <div class="title">
-        <p class="subtitle"></p>
-        <h2 class="maintitle"></h2>
+  <!-- Blog -->
+  <section class="blog section-innear">
+    <div class="container">
+      <div class="title title--center">
+        <p class="subtitle">Our Blog</p>
+        <h2 class="maintitle">Latest News & Blog</h2>
       </div>
       <div class="blog__content">
-        <img src="" alt="">
-        <div class="article__date">
-          <p class="date"></p>
-        </div>
-        <div class="article__content">
-          <h3 class="item__title"></h3>
-          <p class="item__detail"></p>
-        </div>
-        <hr>
-        <div class="author_comment">
-          <div class="author">
-            <i></i>
-            <p></p>
+        <div class="blog__detail">
+          <img src="./image/pic1_1.jpg" alt="">
+          <div class="article__date">
+            <p class="date toRightlinear"> 23 MARCH 2022</p>
           </div>
-          <div class="comment">
-            <i></i>
-            <p></p>
+          <div class="article__content">
+            <h3 class="item--title"> Lorem ipsum dolor sit amet consectetur </h3>
+            <p class="item__detail"> Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus
+              justo
+              quam.</p>
+          </div>
+          <div class="author_comment">
+            <div class="author">
+              <i class="fa-regular fa-circle-user color-pink"></i> BY
+              <span class="color-pink"> johne doe </span>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-message color-pink"></i>
+              <span> comments 15</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__detail">
+          <img src="./image/pic2.jpg" alt="">
+          <div class="article__date">
+            <p class="date toRightlinear"> 23 MARCH 2022</p>
+          </div>
+          <div class="article__content">
+            <h3 class="item--title"> Lorem ipsum dolor sit amet consectetur </h3>
+            <p class="item__detail"> Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus
+              justo
+              quam.</p>
+          </div>
+          <div class="author_comment">
+            <div class="author">
+              <i class="fa-regular fa-circle-user color-pink"></i> BY
+              <span class="color-pink"> johne doe </span>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-message color-pink"></i>
+              <span> comments 15</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__detail">
+          <img src="./image/pic3.jpg" alt="">
+          <div class="article__date">
+            <p class="date toRightlinear"> 23 MARCH 2022</p>
+          </div>
+          <div class="article__content">
+            <h3 class="item--title"> Lorem ipsum dolor sit amet consectetur </h3>
+            <p class="item__detail"> Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus
+              justo
+              quam.</p>
+          </div>
+          <div class="author_comment">
+            <div class="author">
+              <i class="fa-regular fa-circle-user color-pink"></i> BY
+              <span class="color-pink"> johne doe </span>
+            </div>
+            <div class="comment">
+              <i class="fa-regular fa-message color-pink"></i>
+              <span> comments 15</span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- End Blog -->
+    </div>
+  </section>
+  <!-- End Blog -->
+  <!--Footer-->
+  <footer>
     <!--Subcribe-->
-    <section class="subcribe">
-      <p> Subscribe To Our Newsletter </p>
-      <form action="">
-        <input type="email">
-        <button class="btnPrimary toRightlinear"> <i></i></button>
-      </form>
-    </section>
-    <!--End Subcribe-->
-
-    <!--Footer-->
-    <footer>
-      <div class="container">
+    <div class="container">
+      <div class="subcribe flex-space wow animate__animated ">
+        <div class="subcribe__text">
+          <h2 class="item--title font-size28">Subscribe To Our Newsletter </h2>
+        </div>
+        <div class="subcribe__form">
+          <form action="" class="flex-space flexStart">
+            <input type="email" class="inputSubcribe" placeholder="Your Email Address">
+            <button class="btnPrimary toRightlinear btn--fixRadius"><i class="fa-regular fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <!--End Subcribe-->
+      <div class="footer__content wow animate__animated">
         <div class="footer__infor">
-          <i></i>
-          <p></p>
-          <i></i>
-          <p></p>
-          <i></i>
-          <p></p>
+          <div class="infor__logo">
+            <img src="./image/logo-white.png" alt="">
+          </div>
+          <div class="infor__content">
+            <div class="footer__nav flex-space flex--flexStart">
+              <i class="fa-solid fa-phone betweenlinear iconFooter"></i>
+              <span class="color-white">1800-123-4567
+                <br> +91 987-654-3210</span>
+            </div>
+            <div class="footer__nav flex-space flex--flexStart">
+              <i class="fa-solid fa-envelope betweenlinear iconFooter"></i>
+              <span class="color-white">
+                info@example.com
+                services@gmail.com</span>
+            </div>
+            <div class="footer__nav flex-space flex--flexStart">
+              <i class="fa-solid fa-location-dot betweenlinear iconFooter"></i>
+              <span class="color-white"> Demo Address #8901 Marmora
+                <br> Road City</span>
+            </div>
+          </div>
         </div>
         <div class="footer__item">
-          <i class="fa-solid fa-chevron-right"></i>
-          <p></p>
-          <i></i>
-          <p></p>
-          <i></i>
-          <p></p>
-          <i></i>
-          <p></p>
-          <i></i>
-          <p></p>
+          <div class="item__title">
+            <h3> Our links</h3>
+            <i></i>
+          </div>
+          <div class="item__content">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i><span> Home</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> About Us</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Services</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Team</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Blog</span></li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="item__title">
+            <h3>Our links</h3>
+            <i></i>
+          </div>
+          <div class="item__content">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i><span> Strategy & Research</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Web Development</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Services</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Digital Marketing</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> App Design</span></li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="item__title">
+            <h3>Our links</h3>
+            <i></i>
+          </div>
+          <div class="item__content">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i><span> FAQ</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Portfolio</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Privacy Policy</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Terms & Conditions</span></li></a>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> <span> Support</span></li></a>
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
-    <!--End Footer-->
-    <!--Copyright-->
-    <section class="copyright">
-      <div class="container">
-        <p></p>
-        <div class="socials">
-          <i></i>
-        </div>
+    </div>
+  </footer>
+  <!--End Footer-->
+
+  <!--Copyright-->
+  <section class="copyright">
+    <div class="container flex-space">
+      <p>Copyright © 2021 <span class="color-pink"> DexignZone</span> . All rights reserved.</p>
+      <div class="socials">
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-twitter"></i>
+        </a>
       </div>
-    </section>
-    <!--End copyringht -->
-    <!--Back To Top-->
-    <a href="" class="backToTop"><i></i></a>
+    </div>
+  </section>
+  <!--End copyringht -->
 
+  <!--Back To Top-->
+  <a href="#" class="backToTop cd-top text-replace js-cd-top"><i class="fa-solid fa-arrow-up"></i></a>
 
+  <!--Script-->
+  
+  <!--Jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!--Script-->
-    <!--Slick-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--Couter Number-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./libs/countup/jquery.countup.min.js"></script>
+  <script>
+    $('.counter').countUp({
+    });
+  </script>
+  
+  <!--WOW-->
+  <script src="./libs/wowjs/wow.min.js">
+  </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"></script>
-    <script>
-      //SLICK
-      $('.slick--content').slick({
-        infinite: true,
-        slidesToShow: 5,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 1100,
-        dots: true,
-      });
-    </script>
-    <!--End Slick-->
-    <!--Fancy Box-->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script>
-      //  JavaScript will go here
-    </script>
-    <!--End Fancybox-->
-    <!--Couter Number-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-      crossorigin="anonymous"></script>
-    <script src="jquery.countup.js"></script>
-    <script>
-      $('.counter').countUp({
-      });
-    </script>
+  <!--Swiper-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var testimonialThumbs = new Swiper(".testimonial-thumbs", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      centeredSlides: true,
+      freeMode: true,
+      autoplay: true,
+      loop: true,
+      speed: 3000
+    });
+    var testimonialContent = new Swiper(".testimonial-comment", {
+      spaceBetween: 10,
+      autoplay: true,
+      loop: true,
+      speed: 3000,
+      thumbs: {
+        swiper: testimonialThumbs
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    });
+  </script>
+  
+  <!--BackTop-->
+  <script src="./libs/backToTop/assets/js/util.js"></script>
+  <script src="./libs/backToTop/assets/js/main.js"></script>
 
-    <!--End Couter-->
+  <!--Light Gallery-->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/zoom/lg-zoom.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/fullscreen/lg-fullscreen.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/autoplay/lg-autoplay.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/share/lg-share.min.js"></script>
 
-    <!--End Script-->
+  <script>
+    //call libs
+    lightGallery(document.getElementById("animated-thumbnails"), {
+      selector: ".lightimg",
+      plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgShare],
+      alignThumbnails: "left",
+      loop: true,
+      allowMediaOverlap: true,
+      toggleThumb: true,
+      showZoomInOutIcons: true,
+      actualSize: false,
+      exThumbImage: "data-exthumbimage"
+    });
+  </script>
+
+  <!--End Script-->
 </body>
 
 </html>
