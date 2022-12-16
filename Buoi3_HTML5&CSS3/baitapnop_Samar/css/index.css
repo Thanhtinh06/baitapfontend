@@ -181,6 +181,43 @@ header {
   z-index: 1;
 }
 
+.header__content,
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  margin-right: 30px;
+}
+
+.menu li {
+  padding: 55px 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.menu li i {
+  font-size: 9px;
+}
+
+.menu li a span {
+  transition: all 1s;
+}
+
+.menu a:hover {
+  color: #f55f8d;
+}
+
 @keyframes moveNav {
   0% {
     transform: translateY(100%);
@@ -196,39 +233,12 @@ header {
   }
 }
 
-nav ul li a {
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 15px;
-  color: black;
-  margin-left: 15px;
-  cursor: pointer;
-}
-
-nav ul li a span {
-  transition: all 1s;
-}
-
-nav a:hover {
-  color: #f55f8d;
-}
-
-nav ul li a:hover span {
+.menu li a:hover span {
   color: #f55f8d;
   animation-name: moveNav;
-  animation-duration: 0.3s;
+  animation-duration: 1s;
 
 }
-
-nav ul li {
-  padding: 55px 15px;
-}
-
-nav ul {
-  margin-right: 30px;
-}
-
 /*End Header*/
 
 /*CAROUSEL*/
@@ -583,6 +593,10 @@ nav ul {
   transition: all 0.5s;
 }
 
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #f55f8d !important;
+}
+
 .portfolio__item:hover::before {
   left: 125%;
 }
@@ -784,7 +798,7 @@ span[class="price"] {
 
 .testimonial-comment .swiper-wrapper {
   padding-bottom: 20px;
-  
+
 }
 
 .testimonial-thumbs .testimonial-pic {
@@ -794,6 +808,10 @@ span[class="price"] {
 
 .testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic {
   padding: 0 0 40px;
+}
+
+.swiper-slide-thumb-active {
+  color: #f55f8d !important;
 }
 
 /*BLOG*/

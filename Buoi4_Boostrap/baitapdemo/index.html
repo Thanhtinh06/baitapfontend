@@ -11,24 +11,19 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <style>
     .left {
-      padding: 100px 0;
-      text-align: center;
-      color: black;
-      background-color: bisque;
-      font-size: 100px;
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      color: white;
+      position: relative;
     }
 
-    @media screen and (max-width: 576px) {
-      .left {
-        font-size: 20px;
-      }
-    }
+    .mainleft {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-    .right {
-      padding: 100px 0;
-      text-align: center;
-      color: black;
-      background-color: aquamarine;
     }
   </style>
 </head>
@@ -36,9 +31,15 @@
 <body>
   <button class="btn btn-success">Primary</button>
   <button class="btn btn-danger">Danger</button>
-  <div class="row">
-    <div class="col-2 col-sm-6 col-md-8 col-lg-10 col-xl-7 left">Left</div>
-    <div class="col-10 col-sm-6 col-md-4 col-lg-2 col-xl-5 right">Right</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div>hi</div>
+      </div>
+      <div class="col-sm-6">
+        <div>hello</div>
+      </div>
+    </div>
   </div>
 
 
@@ -46,13 +47,16 @@
 
 
 
-  <!--BOOSTRAP-->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
+
+
+
+    <!--BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
