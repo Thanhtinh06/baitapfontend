@@ -1,0 +1,49 @@
+/*Gom nhom theo class*/
+.myDiv {
+
+  .demo {
+    background-color: $primary-color;
+    color: white;
+    /*Gom nhom theo thuoc tinh*/
+    font: {
+      size: $fs;
+      weight: bold;
+      style: italic;
+    }
+  }
+  
+  .title {
+    background-color: $primary-color;
+    text-transform: uppercase;
+    color: white;
+    font: {
+      size: $fs;
+      weight: bold;
+      style: italic;
+    }
+  }
+
+}
+
+.content {
+  display: flex;
+  .left {
+  @include content-layout(blue,40%)
+}
+  .right {
+  @include content-layout(red,60%)
+  }
+}
+
+.container {
+  @if $block-green == pink {
+    background-color: green;
+    color: white;
+  }@else if $block-green == black {
+    background-color: black;
+    color: burlywood;
+  }@else {
+    background-color: beige;
+    color: black;
+  }
+}

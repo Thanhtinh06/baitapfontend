@@ -1,0 +1,28 @@
+/*Vong lap for*/
+@for $size from 1 through 5 {
+  .heading-#{$size}{
+    font-size: 2rem * $size
+  }
+}
+
+/*ten hinh, ten class trung nhau*/
+
+
+
+@each $item in $social {
+  .#{$item} {
+    background-image: url(../image/#{$item}.png);
+    background-size: cover;
+    height: 100%;
+    background-repeat: none;
+  }
+}
+
+/*Vong lap while */
+@while $cols >= 1 {
+  .col-#{$cols} {
+    width: 100% / $cols;
+  }
+  $cols: $cols - 1;
+}
+
