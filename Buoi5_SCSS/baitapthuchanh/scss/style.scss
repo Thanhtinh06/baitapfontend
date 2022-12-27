@@ -1,12 +1,6 @@
-@import "./helpers/variable";
+@import "./helpers/variables";
 @import "./helpers/mixin";
-@import "./base/reset.css";
-@import "./layouts/content";
-@import "./components/button";
-@import "./utils/utils";
+@import "./base/reset";
 @import "./layouts/header";
-@import "./layouts/footer"
-
-
-
-
+@import "./layouts/carousel";
+@import "./components/button";

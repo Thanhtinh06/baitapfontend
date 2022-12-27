@@ -1,19 +1,19 @@
-
-.bnt1 {
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  padding: 20px 40px;
-  background-color: pink;
-}
-
-/*Ke thua*/
-.btn2 {
-  @extend .bnt1;
-  text-transform: lowercase;
+.btn--white {
+  box-shadow: 0 4px 5px $color-blue-3;
+  @include style-button($pd-3, $pd-4, $bd-2, ($bd-1 solid $color-blue-2), transparent);
+  @include style-text($fs-1, $fw-2, $color-blue-2);
 
   &:hover {
-    background-color: black;
-    color: aliceblue;
+    background-color: $color-blue-2;
+    color: $color-white-3;
+  }
+}
+
+.btn--blue {
+  @include style-button($pd-3 + $bd-1, $pd-4 + $bd-1, $bd-2, none, linear-gradient(120deg, #60a4f4, #2a73dd));
+  @include style-text($fs-1, $fw-2, $color-white-3);
+
+  &:hover {
+    background: $color-blue-3;
   }
 }

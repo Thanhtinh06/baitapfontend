@@ -1,16 +1,13 @@
-/*Tuong tu class*/
-@mixin content-layout($bg,$w) {
-  width: $w;
-  height: 100px;
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  background-color: $bg;
+@mixin style-text($fs, $fw, $color){
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
 }
 
-@mixin head-foot($bg,$ta) {
-  color: white;
-  background-color: $bg;
-  text-transform: uppercase;
-  text-align: $ta;
+@mixin style-button($py, $px,$bd-r, $bd, $bg-button) {
+  padding: $py $px;
+  border-radius: $bd-r;
+  border: $bd;
+  background: $bg-button;
+  transition: all 0.3s;
 }

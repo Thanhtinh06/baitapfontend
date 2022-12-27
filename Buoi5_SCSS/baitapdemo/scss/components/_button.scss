@@ -1,0 +1,19 @@
+
+.bnt1 {
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: pink;
+}
+
+/*Ke thua*/
+.btn2 {
+  @extend .bnt1;
+  text-transform: lowercase;
+
+  &:hover {
+    background-color: black;
+    color: aliceblue;
+  }
+}

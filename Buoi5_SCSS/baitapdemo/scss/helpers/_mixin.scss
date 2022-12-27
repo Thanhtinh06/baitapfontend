@@ -1,0 +1,16 @@
+/*Tuong tu class*/
+@mixin content-layout($bg,$w) {
+  width: $w;
+  height: 100px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background-color: $bg;
+}
+
+@mixin head-foot($bg,$ta) {
+  color: white;
+  background-color: $bg;
+  text-transform: uppercase;
+  text-align: $ta;
+}

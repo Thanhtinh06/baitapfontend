@@ -794,6 +794,7 @@ span[class="price"] {
 .testimonial-comment {
   min-height: 300px;
   width: 100%;
+  overflow: hidden;
 }
 
 .testimonial-comment .swiper-wrapper {
