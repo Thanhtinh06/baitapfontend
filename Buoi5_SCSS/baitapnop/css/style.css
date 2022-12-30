@@ -73,11 +73,20 @@ header button.navbar-toggler a:focus {
   color: #b61984;
 }
 header #navbarHeaderSmall {
-  width: 60%;
+  background-color: #FFFFFF;
+  width: 40%;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  padding-left: 2rem;
+  opacity: 0;
+}
+header #navbarHeaderSmall ul li.nav-item, header #navbarHeaderSmall ul button {
+  margin-bottom: 2rem;
+}
+header #navbarHeaderSmall ul.social__icon {
+  margin-top: 2rem;
 }
 
 .btn--puple {
@@ -85,7 +94,7 @@ header #navbarHeaderSmall {
   transition: all 0.3s;
   padding: 0.8rem 1.67rem;
   background: #b61984;
-  border-radius: 1.67rem;
+  border-radius: 2rem;
   border: 1px solid #b61984;
 }
 .btn--puple span {
@@ -101,16 +110,16 @@ header #navbarHeaderSmall {
 .btn--puple::after {
   content: "";
   position: absolute;
-  padding: 0.8rem 1.67rem;
-  background: #FFFFFF;
-  border-radius: 1.67rem;
-  border: 1px solid #FFFFFF;
   transform: scaleY(0);
   transition: all 0.3s;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 0.8rem 1.67rem;
+  background: #FFFFFF;
+  border-radius: 2rem;
+  border: 1px solid #FFFFFF;
 }
 .btn--puple:hover::after {
   transform: scaleY(1);
@@ -123,26 +132,94 @@ header #navbarHeaderSmall {
 }
 
 .btn-send {
-  text-transform: uppercase;
-  margin-top: 2rem;
+  position: relative;
+  transition: all 0.3s;
   padding: 0.99rem 2.8rem;
   background: #b61984;
-  border-radius: 1.67rem;
+  border-radius: 2rem;
   border: 1px solid #b61984;
+}
+.btn-send span {
   font-size: 0.86rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #FFFFFF;
 }
-.btn-send:hover {
+.btn-send::after {
+  content: "";
+  position: absolute;
+  transform: scaleY(0);
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.99rem 2.8rem;
+  background: #FFFFFF;
+  border-radius: 2rem;
+  border: 1px solid #FFFFFF;
+}
+.btn-send:hover::after {
+  transform: scaleY(1);
+  z-index: 2;
+}
+.btn-send:hover span {
+  position: relative;
   color: #b61984;
+  z-index: 3;
+}
+
+.btn--sub {
+  position: relative;
+  transition: all 0.3s;
+  padding: 0.99rem 5rem;
+  background: #FFFFFF;
+  border-radius: 2rem;
+  border: 0.5px solid transparent;
+}
+.btn--sub span {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #191919;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.btn--sub::after {
+  content: "";
+  position: absolute;
+  transform: scaleY(0);
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.99rem 5rem;
+  background: #b61984;
+  border-radius: 2rem;
+  border: 0.5px solid #FFFFFF;
+}
+.btn--sub:hover::after {
+  transform: scaleY(1);
+  z-index: 2;
+}
+.btn--sub:hover span {
+  position: relative;
+  color: #FFFFFF;
+  z-index: 3;
+}
+
+.btn-email {
+  padding: 0.8rem 1.67rem;
+  background: transparent;
+  border-radius: 2rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.2039215686);
 }
 
 .carousel {
   padding: 8rem 0;
-  background-image: url(./../../image/yellow_top_wave_01.png);
+  background-image: url(./../../image/yellow_top_wave_01.png), url(./../../image/Violet_top_left_wave.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top left, bottom;
 }
 .carousel .carousel__content {
   align-items: center;
@@ -159,10 +236,14 @@ header #navbarHeaderSmall {
 }
 
 .about {
-  background-image: url(./../../image/Violet_top_left_wave.png);
+  padding: 0.99rem;
+  position: relative;
+  z-index: 0;
+  background-color: #dcd1f3;
+  background-image: url(./../../image/Wave_White_bottom_right_shape_01.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom left;
 }
 .about .about__item .card {
   position: relative;
@@ -220,6 +301,11 @@ header #navbarHeaderSmall {
   border-radius: 15px;
   box-shadow: 5px 5px 5px 5px rgba(48, 47, 47, 0.1098039216);
 }
+.contact .form .form-control:focus,
+.contact .form .custom-select:focus {
+  border-color: rgba(48, 47, 47, 0.1098039216);
+  box-shadow: 0 0 0 0.1rem rgba(176, 176, 176, 0.25);
+}
 .contact .form h2 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -236,38 +322,38 @@ header #navbarHeaderSmall {
   z-index: 1;
   color: #b61984;
   font-size: 0.75rem;
-  top: 55%;
-  left: 10%;
+  top: 2.5em;
+  left: 1.5em;
 }
 .contact .form .icon-email {
   position: absolute;
   z-index: 1;
   color: #b61984;
   font-size: 0.75rem;
-  top: 56%;
-  left: 10%;
+  top: 2.8em;
+  left: 1.5em;
 }
 .contact .form .icon-selection {
   position: absolute;
   z-index: 1;
   color: #b61984;
   font-size: 0.75rem;
-  top: 30%;
-  left: 4%;
+  top: 0.7em;
+  left: 1.2em;
 }
 .contact .form .icon-messenge {
   position: absolute;
   z-index: 1;
   color: #b61984;
   font-size: 0.75rem;
-  top: 30%;
-  left: 5%;
+  top: 2.8em;
+  left: 1.5em;
 }
 
 footer {
   padding: 8rem 0;
   background-image: url(./../../image/footer_background.jpg);
-  background-size: 115%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   color: white;
@@ -303,4 +389,25 @@ footer .footer_menu a {
   font-size: 0.86rem;
   font-weight: 500;
   color: #FFFFFF;
+}
+footer input.btn-email {
+  text-align: center;
+}
+footer input.btn-email::-moz-placeholder {
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer input.btn-email:-ms-input-placeholder {
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer input.btn-email::placeholder {
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
 }/*# sourceMappingURL=style.css.map */

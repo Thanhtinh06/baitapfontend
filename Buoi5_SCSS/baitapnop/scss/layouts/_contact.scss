@@ -10,6 +10,14 @@
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px $color-light-gray;
 
+
+
+    .form-control:focus,
+    .custom-select:focus {
+      border-color: $color-light-gray;
+      box-shadow: 0 0 0 0.1rem rgba(176, 176, 176, 0.25)
+    }
+
     h2 {
       @include style-text($fs-6, $fw-4, $color-black-1);
     }
@@ -19,19 +27,20 @@
     }
 
     .icon-name {
-      @include style-icon(55%,10%)
+      @include style-icon(2.5em,1.5em)
     }
 
     .icon-email {
-      @include style-icon(56%,10%)
+      @include style-icon(2.8em,1.5em)
     }
 
     .icon-selection {
-      @include style-icon(30%,4%)
+      @include style-icon(0.7em,1.2em)
     }
 
     .icon-messenge {
-      @include style-icon(30%,5%)
+      @include style-icon(2.8em,1.5em)
     }
+    
   }
 }

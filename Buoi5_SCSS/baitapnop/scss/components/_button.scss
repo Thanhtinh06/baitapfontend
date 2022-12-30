@@ -1,7 +1,7 @@
 .btn--puple {
   position: relative;
   transition: all 0.3s;
-  @include style-button($pd-7, $pd-6, $color-puple, $bd-1 solid $color-puple,none);
+  @include style-button($pd-7, $pd-6, $color-puple, $bd-1 solid $color-puple);
   span {
     @include style-text($fs-1, $fw-2, $color-white);
   }
@@ -10,10 +10,10 @@
   }
   &::after {
     @include button-after();
-    @include style-button($pd-7, $pd-6, $color-white, $bd-1 solid $color-white,none);
+    @include style-button($pd-7, $pd-6, $color-white, $bd-1 solid $color-white);
   }
 
-  &:hover{
+  &:hover {
     &::after {
       @include button-hover-after();
     }
@@ -24,23 +24,57 @@
 }
 
 .btn-send {
-  margin-top: $mg-5;
   position: relative;
   transition: all 0.3s;
-  @include style-button($pd-1 $pd-9, $color-puple, $bd-1 solid $color-puple,uppercase);
+  @include style-button($pd-1, $pd-9, $color-puple, $bd-1 solid $color-puple);
   span {
-    @include style-text($fs-1, $fw-3, $color-white);
+    @include style-text($fs-1, $fw-2, $color-white);
   }
+
   &::after {
     @include button-after();
-    @include style-button($pd-1, $pd-9, $color-white, $bd-1 solid $color-puple,uppercase);
+    @include style-button($pd-1, $pd-9, $color-white, $bd-1 solid $color-white);
   }
-  &:hover{
+
+  &:hover {
     &::after {
       @include button-hover-after();
     }
+
+    span {
+      @include button-hover($color-puple);
+    }
+  }
+}
+
+.btn--sub {
+  position: relative;
+  transition: all 0.3s;
+  @include style-button($pd-1, $pd-10, $color-white, 0.5px solid transparent);
+  span {
+    @include style-text($fs-9, $fw-3, $color-black-1);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  &::after {
+    @include button-after();
+    @include style-button($pd-1, $pd-10, $color-puple, 0.5px solid $color-white);
+  }
+
+  &:hover {
+    &::after {
+      @include button-hover-after();
+    }
+
     span {
       @include button-hover($color-white);
     }
   }
+}
+
+.btn-email {
+  @include style-button($pd-7, $pd-6, transparent, 0.5px solid $color-light-white);
+
+  
 }

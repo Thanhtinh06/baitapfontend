@@ -1,9 +1,10 @@
 .carousel {
   padding: $pd-8 0;
-  background-image: url(./../../image/yellow_top_wave_01.png);
+  background-image: url(./../../image/yellow_top_wave_01.png),url(./../../image/Violet_top_left_wave.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top left, bottom;
+
   .carousel__content {
     align-items: center;
     .title {
@@ -11,7 +12,7 @@
         @include style-text ($fs-2,$fw-3,$color-puple);
       }
       h1 {
-        @include style-text ($fs-3,$fw-4,$color-black-1)
+        @include style-text ($fs-3,$fw-4,$color-black-1);
       }
     }
   }

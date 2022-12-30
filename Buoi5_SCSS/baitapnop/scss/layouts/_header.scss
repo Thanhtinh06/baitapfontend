@@ -63,11 +63,22 @@ header {
   }
 
   #navbarHeaderSmall {
-    width: 60%;
+    background-color: $color-white;
+    width: 40%;
+    height: 100vh;
     position: absolute;
     top:0;
-    left: 0;
-    z-index: 1; 
+    left:0;
+    padding-left: $pd-4;
+    opacity: 0;
+    ul {
+      li.nav-item,button {
+        margin-bottom: $mg-5;
+      }
+    }
+    ul.social__icon {
+      margin-top: $mg-5;
+    }
   }
 
 }

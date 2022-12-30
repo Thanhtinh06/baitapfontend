@@ -1,6 +1,10 @@
 .about {
-  background-image: url(./../../image/Violet_top_left_wave.png);
-  @include style-background(100%,top);
+  padding: $pd-1;
+  position: relative;
+  z-index: 0;
+  background-color: #dcd1f3;
+  background-image: url(./../../image/Wave_White_bottom_right_shape_01.png);
+  @include style-background(100%,bottom left);
 
   .about__item {
     .card {
