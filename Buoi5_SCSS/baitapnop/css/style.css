@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .navbar {
+  width: 100%;
+  padding: 0 2rem;
+}
+header .navbar img {
+  width: 5.3rem;
+  height: 5.3rem;
+}
+header .navbar-nav {
+  padding-left: 2rem !important;
+}
+header .nav-item {
+  padding-right: 3.3rem !important;
+}
+header .nav-item .nav-link {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #191919;
+  padding: 0 !important;
+}
+header .nav-item:hover {
+  cursor: pointer;
+}
+header .nav-item:hover .nav-link {
+  color: #b61984;
+}
+header .social {
+  margin-left: 0.8rem;
+}
+header .social ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+header .social ul li {
+  margin-left: 0.525rem;
+}
+header .social ul li i {
+  font-size: 0.86rem;
+}
+header .social ul li:hover {
+  cursor: pointer;
+}
+header .social ul li:hover i {
+  color: #b61984;
+}
+header button.navbar-toggler a {
+  color: black;
+}
+header button.navbar-toggler a:focus {
+  color: #b61984;
+}
+header #navbarHeaderSmall {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.btn--puple {
+  position: relative;
+  transition: all 0.3s;
+  padding: 0.8rem 1.67rem;
+  background: #b61984;
+  border-radius: 1.67rem;
+  border: 1px solid #b61984;
+}
+.btn--puple span {
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.btn--puple i {
+  font-size: 0.86rem;
+  font-weight: none;
+  color: #FFFFFF;
+}
+.btn--puple::after {
+  content: "";
+  position: absolute;
+  padding: 0.8rem 1.67rem;
+  background: #FFFFFF;
+  border-radius: 1.67rem;
+  border: 1px solid #FFFFFF;
+  transform: scaleY(0);
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn--puple:hover::after {
+  transform: scaleY(1);
+  z-index: 2;
+}
+.btn--puple:hover span, .btn--puple:hover i {
+  position: relative;
+  color: #b61984;
+  z-index: 3;
+}
+
+.btn-send {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding: 0.99rem 2.8rem;
+  background: #b61984;
+  border-radius: 1.67rem;
+  border: 1px solid #b61984;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.btn-send:hover {
+  color: #b61984;
+}
+
+.carousel {
+  padding: 8rem 0;
+  background-image: url(./../../image/yellow_top_wave_01.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.carousel .carousel__content {
+  align-items: center;
+}
+.carousel .carousel__content .title h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+}
+.carousel .carousel__content .title h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.about {
+  background-image: url(./../../image/Violet_top_left_wave.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.about .about__item .card {
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.about .about__item .card .card-img-top {
+  transition: all 0.5s;
+  width: 100%;
+}
+.about .about__item .card .card-body {
+  text-align: center;
+  padding: 2rem 0.99rem;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.about .about__item .card .card-body h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b61984;
+}
+.about .about__item .card .card-body h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #191919;
+}
+.about .about__item .card .card-body p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #181818;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about .about__item .card:hover {
+  box-shadow: 0 15px 5px rgba(48, 47, 47, 0.1098039216);
+}
+.about .about__item .card:hover img {
+  transform: scale(1.1, 1.1);
+  width: 97%;
+  padding-bottom: 2%;
+}
+
+.contact {
+  padding: 4rem 0;
+  background-image: url(./../../image/accent_bottom_wave_01.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.contact .form {
+  background-color: white;
+  width: 90%;
+  padding: 70px 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px rgba(48, 47, 47, 0.1098039216);
+}
+.contact .form h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #191919;
+}
+.contact .form input, .contact .form select, .contact .form textarea {
+  border-radius: 25px;
+  font-size: 0.8em;
+  padding-left: 2rem;
+  position: relative;
+}
+.contact .form .icon-name {
+  position: absolute;
+  z-index: 1;
+  color: #b61984;
+  font-size: 0.75rem;
+  top: 55%;
+  left: 10%;
+}
+.contact .form .icon-email {
+  position: absolute;
+  z-index: 1;
+  color: #b61984;
+  font-size: 0.75rem;
+  top: 56%;
+  left: 10%;
+}
+.contact .form .icon-selection {
+  position: absolute;
+  z-index: 1;
+  color: #b61984;
+  font-size: 0.75rem;
+  top: 30%;
+  left: 4%;
+}
+.contact .form .icon-messenge {
+  position: absolute;
+  z-index: 1;
+  color: #b61984;
+  font-size: 0.75rem;
+  top: 30%;
+  left: 5%;
+}
+
+footer {
+  padding: 8rem 0;
+  background-image: url(./../../image/footer_background.jpg);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: white;
+}
+footer h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+footer li {
+  padding: 7.5px 0;
+}
+footer .footer__contact li span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+footer .footer__contact li i {
+  font-size: 0.86rem;
+}
+footer .footer__contact li .icon-brand li {
+  margin-right: 1rem;
+}
+footer .footer__contact li .icon-brand li a {
+  color: white;
+}
+footer .footer_menu a {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(48, 47, 47, 0.1098039216);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

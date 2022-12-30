@@ -1,0 +1,46 @@
+.btn--puple {
+  position: relative;
+  transition: all 0.3s;
+  @include style-button($pd-7, $pd-6, $color-puple, $bd-1 solid $color-puple,none);
+  span {
+    @include style-text($fs-1, $fw-2, $color-white);
+  }
+  i {
+    @include style-text($fs-1, none, $color-white);
+  }
+  &::after {
+    @include button-after();
+    @include style-button($pd-7, $pd-6, $color-white, $bd-1 solid $color-white,none);
+  }
+
+  &:hover{
+    &::after {
+      @include button-hover-after();
+    }
+    span,i {
+      @include button-hover($color-puple);
+    }
+  }
+}
+
+.btn-send {
+  margin-top: $mg-5;
+  position: relative;
+  transition: all 0.3s;
+  @include style-button($pd-1 $pd-9, $color-puple, $bd-1 solid $color-puple,uppercase);
+  span {
+    @include style-text($fs-1, $fw-3, $color-white);
+  }
+  &::after {
+    @include button-after();
+    @include style-button($pd-1, $pd-9, $color-white, $bd-1 solid $color-puple,uppercase);
+  }
+  &:hover{
+    &::after {
+      @include button-hover-after();
+    }
+    span {
+      @include button-hover($color-white);
+    }
+  }
+}

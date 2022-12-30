@@ -1,0 +1,74 @@
+@mixin mg-pd-section($pd-y) {
+  margin: 0 $mg-2;
+  padding: $pd-y 0;
+}
+
+@mixin style-text($fz,$fw,$color) {
+  font-size: $fz;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin style-button($pd-y, $pd-x, $bg, $bd,$text-transform) {
+  padding: $pd-y $pd-x;
+  background: $bg;
+  border-radius: $b-r-1;
+  border: $bd;
+  text-transform: $text-transform;
+}
+
+@mixin button-after(){
+  content: "";
+  position: absolute;
+  transform: scaleY(0);
+  transition: all 0.3s;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin button-hover($color){
+  position: relative;
+  color:$color;
+  z-index: 3;
+}
+
+@mixin button-hover-after() {
+  transform: scaleY(1);
+  z-index: 2;
+}
+
+@mixin flex-element ($fd,$align,$justify,$mg){
+  display: flex;
+  flex-direction:$fd;
+  align-items: $align;
+  justify-content:$justify;
+  margin: $mg;
+}
+
+@mixin style-background ($bz,$bp){
+  background: {
+    size: $bz;
+    repeat: no-repeat;
+    position: $bp;
+  };
+}
+
+@mixin style-element-form() {
+
+  border-radius: 25px;
+  font-size: 0.8em;
+  padding-left: 2rem;
+  position: relative;
+  
+}
+
+@mixin style-icon ($t,$l) {
+  position: absolute;
+  z-index: 1;
+  color: $color-puple;
+  font-size: $fs-4;
+  top:$t;
+  left: $l;
+}
