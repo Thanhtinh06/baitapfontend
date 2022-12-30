@@ -72,21 +72,26 @@ header button.navbar-toggler a {
 header button.navbar-toggler a:focus {
   color: #b61984;
 }
-header #navbarHeaderSmall {
+header .forSmallScreen {
   background-color: #FFFFFF;
-  width: 40%;
+  width: 50%;
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   padding-left: 2rem;
   opacity: 0;
+  z-index: -1;
 }
-header #navbarHeaderSmall ul li.nav-item, header #navbarHeaderSmall ul button {
+header .forSmallScreen ul li.nav-item, header .forSmallScreen ul button {
   margin-bottom: 2rem;
 }
-header #navbarHeaderSmall ul.social__icon {
+header .forSmallScreen ul.social__icon {
   margin-top: 2rem;
+}
+header .forSmallScreen.show {
+  opacity: 1;
+  z-index: 1;
 }
 
 .btn--puple {

@@ -58,19 +58,21 @@ header {
       color: black;
       &:focus {
       color: $color-puple;
+
       }
     }
   }
 
-  #navbarHeaderSmall {
+  .forSmallScreen {
     background-color: $color-white;
-    width: 40%;
+    width: 50%;
     height: 100vh;
     position: absolute;
     top:0;
     left:0;
     padding-left: $pd-4;
     opacity: 0;
+    z-index: -1;
     ul {
       li.nav-item,button {
         margin-bottom: $mg-5;
@@ -81,5 +83,11 @@ header {
     }
   }
 
+  .forSmallScreen.show {
+    opacity: 1;
+    z-index: 1;
+  }
 }
+
+
 
