@@ -357,7 +357,7 @@ header .forSmallScreen.show {
 
 footer {
   padding: 8rem 0;
-  background-image: url(./../../image/footer_background.jpg);
+  background-image: url(../image/footer_background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
