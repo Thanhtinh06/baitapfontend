@@ -98,3 +98,8 @@ getEle('btnXacNhan').onclick = function(event) {
   getEle('txtXepLoai').innerHTML = student.getRank();
 }
 
+getEle('btnXacNhan').onclick = function(event) {
+  event.preventDefault();
+  var score = new Score();
+  var student = new Student();
+}
