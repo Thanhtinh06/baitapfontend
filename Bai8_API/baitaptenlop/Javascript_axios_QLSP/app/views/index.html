@@ -15,6 +15,29 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <style>
+      .loader {
+          border: 16px solid #f3f3f3; /* Light grey */
+          border-top: 16px solid #3498db; /* Blue */
+          border-radius: 50%;
+          width: 120px;
+          height: 120px;
+          animation: spin 2s linear infinite;
+
+      }
+      .position_center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: (-50%,-50%);
+        }
+
+      @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+      }
+
+  </style>
   </head>
 
   <body>
@@ -125,7 +148,9 @@
                 <th>Mô Tả</th>                
                 <th>Action</th>
               </thead>
-              <tbody id="tblDanhSachSP"></tbody>
+              <tbody id="tblDanhSachSP">
+                <div class="loader position_center" id="loader" style="display: none;"></div>
+              </tbody>
             </table>
             <!-- END TABLE SẢN PHẨM -->
           </div>
@@ -142,7 +167,7 @@
           <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">Modal Heading</h4>
+              <h4 class="modal-title" id="title_modal"></h4>
               <button type="button" class="close" data-dismiss="modal">
                 &times;
               </button>
@@ -171,15 +196,12 @@
                   id="HinhSP"
                   class="form-control"
                   placeholder="Nhập vào hình sản phẩm"
+                  type="file"
                 />
               </div>
               <div class="form-group">
-                <label for="">Loại sản phẩm: </label>
-                <select class="form-control" id="loaiSP">
-                  <option value="phone">Phone</option>
-                  <option value="laptop">Laptop</option>
-                  <option value="other">Other</option>
-                </select>
+                <label for="moTa">Mô tả sản phẩm: </label>
+                <textarea name="moTa" id="MoTa" cols="30" rows="10" class="form-control"></textarea>
               </div>
             </div>
             <!-- Modal footer -->
@@ -215,5 +237,11 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"
+    integrity="sha512-NCiXRSV460cHD9ClGDrTbTaw0muWUBf/zB/yLzJavRsPNUl9ODkUVmUHsZtKu17XknhsGlmyVoJxLg/ZQQEeGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../models/product.js"></script>
+    <script src="./../services/callapi.js"></script>
+    <script src="./../controllers/main.js"></script>
   </body>
 </html>

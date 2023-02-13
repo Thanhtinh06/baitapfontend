@@ -8,12 +8,14 @@ var callApi = new CallApi();
 
 
 function getListProduct(){
+  getEle("loader").style.display = "block";
   var promise = callApi.fetchListData(); // return ve promise (promise bất động bộ)
   promise
     // resolve => vo then xu ly
     .then(function(result){
       // result.data: object return co key la data => value la 
       renderData(result.data);
+      getEle("loader").style.display = "none";
     })
     // reject => vo catch xu ly
     .catch(function(error){
