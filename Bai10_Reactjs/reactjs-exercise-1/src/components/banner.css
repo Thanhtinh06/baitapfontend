@@ -1,0 +1,8 @@
+.banner {
+    background-color: rgba(128, 128, 128, 0.475);
+    text-align: left;
+    padding: 50px 30px;
+}
+p {
+    color: rgb(138, 142, 145);
+}

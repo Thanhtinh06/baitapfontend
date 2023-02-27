@@ -1,0 +1,7 @@
+.navbar-brand {
+    margin: 0;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}

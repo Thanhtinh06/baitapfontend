@@ -1,0 +1,11 @@
+.main {
+    display: flex
+}
+
+.main Content {
+    width: 80%;
+}
+
+.main Sidebar {
+    width: 20%;
+}
