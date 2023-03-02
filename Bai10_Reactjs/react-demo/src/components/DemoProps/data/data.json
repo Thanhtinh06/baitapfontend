@@ -1,0 +1,26 @@
+[
+  {
+    "id":"1",
+    "name":"Cây táo nở hoa",
+    "rating":"4.5",
+    "price":"90k/ticket"
+  },
+  {
+    "id":"2",
+    "name":"Nữ chủ",
+    "rating":"4.8",
+    "price":"100k/ticket"
+  },
+  {
+    "id":"3",
+    "name":"Báo đen",
+    "rating":"4.4",
+    "price":"80k/ticket"
+  },
+  {
+    "id":"4",
+    "name":"Mị Nguyệt Truyện",
+    "rating":"4.1",
+    "price":"70k/ticket"
+  }
+]

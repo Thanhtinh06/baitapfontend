@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import DemoForLoop from './components/DemoForLoop';
+import ListProduct from './components/DemoProps/Exercise-props/ListProduct';
+// import DemoProps from './components/DemoProps/DemoProps';
 // import CarEx2 from './exercise2/Car';
 
 // import Home from './ex1/Home'
@@ -9,10 +10,8 @@ import DemoForLoop from './components/DemoForLoop';
 function App() {
   return (
     <div className="App">
-       {/**Call component */}
-       {/* <DemoDataBinding /> */}
-       {/* <CarEx2 /> */}
-       <DemoForLoop />
+      <h2>List Product</h2>
+      <ListProduct />
     </div>
   );
 }
