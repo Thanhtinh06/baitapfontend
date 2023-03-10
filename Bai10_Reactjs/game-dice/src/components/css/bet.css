@@ -1,0 +1,31 @@
+.btn-bet {
+  padding: 50px;
+  border: 2px solid greenyellow;
+  font-size: 25px;
+  color: white;
+  background-color: black;
+}
+.play-bet {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-family: 'MyWebFont';
+}
+
+.btn-bet:hover {
+  color: red;
+  border-color: red;
+  background-color: black;
+}
+
+.btn-bet:click {
+  background-color: red;
+}
+
+.checked {
+  background-color: red;
+  color: white;
+  border-color: transparent;
+}

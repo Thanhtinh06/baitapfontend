@@ -1,0 +1,11 @@
+.img-dice{
+  width: 50px;
+  height: 50px;
+}
+
+.dice {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}

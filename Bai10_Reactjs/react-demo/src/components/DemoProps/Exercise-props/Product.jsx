@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import "./product.css";
+import { DataContext } from "./context";
 
 export default class Product extends Component {
+  static contextType = DataContext;
   render() {
+    console.log(this.context)
     const {phone} = this.props;
     const {viewDetail} = this.props;
     return (

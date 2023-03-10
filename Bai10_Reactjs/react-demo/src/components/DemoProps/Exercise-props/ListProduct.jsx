@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Product from "./Product";
 import listProducts from "./../data/dataPhone.json";
-
+import { DataContext, DataContext2 } from "./context";
 import "./listProduct.css";
 
 export default class ListProduct extends Component {
@@ -12,15 +12,21 @@ export default class ListProduct extends Component {
 
   renderListProduct = () => {
     return this.listProduct.map((pro, index) => {
-      return <Product key={index} phone={pro} viewDetail={this.handleViewDetail}></Product>;
+      return (
+        <Product
+          key={index}
+          phone={pro}
+          viewDetail={this.handleViewDetail}
+        ></Product>
+      );
     });
-  }
+  };
 
   handleViewDetail = (product) => {
     this.setState({
-        detailProduct : product
-      })
-  }
+      detailProduct: product,
+    });
+  };
 
   renderDetailProduct() {
     const { detailProduct } = this.state;
@@ -75,11 +81,15 @@ export default class ListProduct extends Component {
 
   render() {
     return (
-      <div className="container list-product">
-        <div className="row">{this.renderListProduct()}</div>
-        <br></br>
-        <div className="row">{this.renderDetailProduct()}</div>
-      </div>
+      <DataContext.Provider value={this.state.detailProduct}>
+        <DataContext2.Provider value="abc">
+          <div className="container list-product">
+            <div className="row">{this.renderListProduct()}</div>
+            <br></br>
+            <div className="row">{this.renderDetailProduct()}</div>
+          </div>
+        </DataContext2.Provider>
+      </DataContext.Provider>
     );
   }
 }
