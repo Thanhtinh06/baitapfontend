@@ -7,22 +7,16 @@ import reportWebVitals from './reportWebVitals';
 
 //set up redux
 import { Provider } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit';
-import rootReducer from './redux/rootReducer';
+import {store} from './store/index'
 
-const store = configureStore({reducer :rootReducer});
-//tool check product đã hiện thị chưa của gg chrome
-  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  // </React.StrictMode>
+  <Provider store={store}>
+    <App />
+  </Provider>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
